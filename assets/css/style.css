@@ -120,7 +120,7 @@ input{
     border-radius: 4px;
     color: #FFD369;
     padding-left: 20px;
-    height: 525px;
+    height: 580px;
 }
 .articulo1 h1{
     font-size: 80px;
@@ -146,6 +146,10 @@ input{
     margin-left: 240px;
     background-color: #F4EEE0;
     color: #4F4557;
+}
+.button:hover{
+    background-color: #393646;
+    color: #FFD369;
 }
 .articulo1 img{
     width: 650px;
