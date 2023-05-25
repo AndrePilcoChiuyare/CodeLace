@@ -5,27 +5,29 @@ body{
     background-color: #393646;
 }
 section.grid-container-menu{
+    border: 1px solid red;
     display:grid;
     grid-template-columns: 7.5% 77.5% 7.5% 7.5%;
 }
 article.celdaGrid {
     text-align: center;
 }
-article.celdaGrid > i{
+i{
     color: #6f6988;
     position: fixed;
     top:30px;
-}
-article.celdaGrid > i:hover{
-    position: fixed;
-    top:30px;
-
 }
 ul.menuDesplegable{
     display:none;
     margin: 10px;
 }
-.celdaGrid:hover > #menuicon{
+.celdaGrid:hover > #menuIcon{
+    color: #FFD369;
+}
+.celdaGrid:hover > #perfilIcon{
+    color: #FFD369;
+}
+.celdaGrid:hover > a >#mentoriaIcon{
     color: #FFD369;
 }
 .celdaGrid:hover .menuDesplegable{
@@ -36,16 +38,43 @@ ul.menuDesplegable{
     width: 200px;
     list-style: none;
     cursor: pointer;
-    border-radius: 0px 0px 5px 5px ;
+    border-radius: 5px 5px 5px 5px ;
     text-align: start;
+    color: #F4EEE0;
 }
-.menuDesplegable > li:first-child{
-    padding-bottom: 15px;
-    padding-top: 5px;
-}
-.menuDesplegable > li:last-child{
+.menuDesplegable > li{
     padding-top: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
+}
+.menuDesplegable > li:hover{
+    color:#FFD369;
+    font-weight: bold;
+}
+ul.perfilDesplegable{
+    display:none;
+    margin-top: 10px;
+    position: fixed;
+    right: 10px;
+}
+.celdaGrid:hover .perfilDesplegable{
+    display:block;
+    position: fixed;
+    top:40px;
+    background-color: #4F4557;
+    width: 200px;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px ;
+    text-align: start;
+    color: #F4EEE0;
+}
+.perfilDesplegable > li:hover{
+    color:#FFD369;
+    font-weight: bold;
+}
+.perfilDesplegable > li{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 #logo{
     text-decoration: none;
@@ -53,4 +82,7 @@ ul.menuDesplegable{
     font-weight: bolder;
     font-size: 40px;
     text-align: center;
+}
+#logo:hover{
+    color: #6f6988;
 }
