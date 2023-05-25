@@ -4,40 +4,29 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CodeLace</title>
 		<link rel="stylesheet" href="assets/css/style.css">
+		<script src="https://kit.fontawesome.com/a80e29a7c1.js" crossorigin="anonymous"></script>
 		<title>CodeLace</title>
 	</head>
 	<body>
-		<header>
-			<a href="#" class="menu">
-				<img src="assets/img/menu.png" alt="Menú">
-				<img src="assets/img/menu_hover.png" alt="Menú">
-			</a>
-			<nav>
-				<a href="#" class="mentoria">
-					<img src="assets/img/reservation.png" alt="Mentorías reservadas">
-					<img src="assets/img/reservation_hover.png" alt="Mentorías reservadas">
-				</a>
-				<a href="#" class="perfil">
-					<img src="assets/img/profile.png" alt="Perfil">
-					<img src="assets/img/profile_hover.png" alt="Perfil">
-				</a>
-			</nav>
-			<a href="" class="logo">
-				<h1 class="CodeLace">CodeLace</h1>
-				<img src="assets/img/codelace_logo.png" alt="Logo CodeLace">
-			</a>
-		</header>
-		<article class="articulo1">
-			<form action="">
-            	<input type="search" id="searchID" name="search" placeholder="Buscar mentorías">
-			</form>
-			<img src="assets/img/imagen1.png" alt="Imagen Principal">
-			<h1>Simplifica tu camino <br> como programador</h1>
-			<h2>Benefíciate de la mejor red de <br> mentores</h2>
-			<h3>Absuelve tus dudas de programación y entiende tu carrera a <br> fondo</h3>
-			<a class="button" href="#">Unirse</a>
-		</article>
+		<section class="grid-container-menu">
+			<article class="celdaGrid">
+				<i class="fa-solid fa-bars fa-2xl" alt="menu" id="menuicon"></i>
+				<ul class="menuDesplegable">
+					<li>Pantalla principal</li>
+					<li>Acerca de nosotros</li>
+					<li>Ayuda</li>
+				</ul>
+			</article>
+			<article class="celdaGrid">
+				<a href="#" id="logo">CodeLace</a>
+			</article>
+			<article class="celdaGrid">
+				<i class="fa-solid fa-person-chalkboard fa-2xl" alt="mentorias"></i>
+			</article>
+			<article class="celdaGrid">
+				<i class="fa-solid fa-user fa-2xl" alt="perfil"></i>
+			</article>
+		</section>
 	</body>
 </html>
