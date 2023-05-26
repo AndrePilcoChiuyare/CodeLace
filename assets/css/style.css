@@ -125,6 +125,8 @@ section.seccion1{
     margin-top: 50px;
     background-color: #4F4557;
     border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 section.seccion1 > div{
     /* border: 2px solid cyan; */
@@ -154,8 +156,9 @@ section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg{
 }
 section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg > img{
     border-radius: 5px;
-    height: 700px;
-    position:fixed;
+    /* height: 700px; */
+    height: 90%;
+    position:absolute;
     margin-top: 20px;
 }
 
@@ -192,6 +195,13 @@ section.espacio{
 .button:hover{
     background-color: #393646;
     color: #FFD369;
+}
+
+@media(max-width: 1120px){
+    section.seccion1 > section.seccionInterna{
+        display:grid;
+        grid-template-columns: 100%;
+    }
 }
 
 /* .button{
