@@ -5,24 +5,22 @@ body{
     background-color: #393646;
 }
 section.grid-container-menu{
+    background-color: #393646;
     display:grid;
     grid-template-columns: 7.5% 77.5% 7.5% 7.5%;
+    position:fixed;
+    left:0;
+    top:0;
+    width: 100%;
 }
-section.grid-container-seccion{
-    display:grid;
-    grid-template-columns: 7.5% 77.5% 7.5% 7.5%;
-    border: 1px solid red;
-}
+
 article.celdaGrid {
     text-align: center;
-}
-article.celdaGrid-seccion{
-
 }
 i{
     color: #6f6988;
     position: fixed;
-    top:30px;
+    top:21px;
 }
 ul.menuDesplegable{
     display:none;
@@ -99,6 +97,7 @@ ul.perfilDesplegable > li > a{
     text-decoration: none;
     color: #F4EEE0;
 }
+
 a{
     text-decoration: none;
     color: white;
@@ -120,10 +119,72 @@ input{
     padding-left: 10px;
 }
 
+section.seccion1{
+    border: 4px solid rgb(3, 255, 54);
+    padding-top: 40px;
+}
+section.seccion1 > div{
+    border: 2px solid cyan;
+}
+section.seccion1 > div.buscador{
+    text-align: center;
+}
+section.seccion1 > section.seccionInterna{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+section.seccion1 > section.seccionInterna > article.celdaGrid{
+    border: 5px solid rgb(241, 0, 249);
+    text-align: left;
+}
+
+section.seccion1 > section.seccionInterna > article.celdaGrid > p{
+    padding-left: 20px;
+    color:#FFD369;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg{
+    display: flex;
+    justify-content: center;
+}
+section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg > img{
+    border-radius: 5px;
+    height: 700px;
+}
+
+p#p1{
+    font-weight: bolder;
+    font-size: 60px;
+}
+p#p2{
+    font-weight: lighter;
+    font-size: 50px;
+}
+p#p3{
+    font-weight: lighter;
+    font-size: 30px;
+}
+/* .button{
+    font-size: 36px;
+    border-radius:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 120px;
+    padding-left: 120px;
+    margin-left: 240px;
+    background-color: #F4EEE0;
+    color: #4F4557;
+}
+.button:hover{
+    background-color: #393646;
+    color: #FFD369;
+} */
 
 
-.articulo1{
-    /*border: 1px solid black;*/
+/* .articulo1{
+    border: 1px solid red;
     margin: auto;
     width: 96.5%;
     background-color: #4F4557;
@@ -166,4 +227,4 @@ input{
     border-radius:4px;
     float: right;
     margin-right: 60px;
-}
+} */
