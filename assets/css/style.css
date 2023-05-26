@@ -1,28 +1,107 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    font-family: sans-serif, 'Courier New', Courier, monospace;
+    font-family: sans-serif;
 }
 body{
     background-color: #393646;
 }
+section.grid-container-menu{
+    display:grid;
+    grid-template-columns: 7.5% 77.5% 7.5% 7.5%;
+}
+section.grid-container-seccion{
+    display:grid;
+    grid-template-columns: 7.5% 77.5% 7.5% 7.5%;
+    border: 1px solid red;
+}
+article.celdaGrid {
+    text-align: center;
+}
+article.celdaGrid-seccion{
+
+}
+i{
+    color: #6f6988;
+    position: fixed;
+    top:30px;
+}
+ul.menuDesplegable{
+    display:none;
+    margin: 10px;
+}
+.celdaGrid:hover > #menuIcon{
+    color: #FFD369;
+}
+.celdaGrid:hover > #perfilIcon{
+    color: #FFD369;
+}
+.celdaGrid:hover > a >#mentoriaIcon{
+    color: #FFD369;
+}
+.celdaGrid:hover .menuDesplegable{
+    display:block;
+    position: fixed;
+    top:40px;
+    background-color: #4F4557;
+    width: 200px;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px ;
+    text-align: start;
+}
+.menuDesplegable > li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.menuDesplegable > li > a:hover{
+    color:#FFD369;
+    font-weight: bold;
+}
+.menuDesplegable > li > a{
+    text-decoration: none;
+    color: #F4EEE0;
+}
+ul.perfilDesplegable{
+    display:none;
+    margin-top: 10px;
+    position: fixed;
+    right: 10px;
+}
+.celdaGrid:hover .perfilDesplegable{
+    display:block;
+    position: fixed;
+    top:40px;
+    background-color: #4F4557;
+    width: 200px;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px ;
+    text-align: start;
+}
+.perfilDesplegable > li > a:hover{
+    color:#FFD369;
+    font-weight: bold;
+}
+.perfilDesplegable > li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#logo{
+    text-decoration: none;
+    color: #FFD369;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+#logo:hover{
+    color: #6f6988;
+}
+ul.perfilDesplegable > li > a{
+    text-decoration: none;
+    color: #F4EEE0;
+}
 a{
     text-decoration: none;
     color: white;
-}
-nav a{
-    font-weight: 600;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-header{
-    display: flex;
-    min-height: 70px;
-    justify-content: space-between;
-    background-color: #393646;
-    align-items: center;
-    padding:10px;
 }
 form{
     padding-top: 10px;
@@ -42,75 +121,6 @@ input{
 }
 
 
-.logo{
-    display:flex;
-    align-items: center;
-    position: absolute;
-    top: 29px;
-    right: 45%;
-}
-.logo h1{
-    color: #FFD369;
-}
-.logo h1:hover{
-    color: #6f6988;
-}
-.logo img{
-    height: 25px;
-    margin-left: 5px
-}
-
-.menu{
-    display:flex;
-    align-items: center;
-    margin-left: 10px;
-}
-.menu img{
-    height:40px;
-}
-.menu img:last-child{
-    display:none;
-}
-.menu:hover img:last-child{
-    display:block;
-}
-.menu:hover img:first-child{
-    display:none;
-}
-
-.mentoria{
-    align-items: center;
-    display: inline-flex;
-}
-.mentoria img{
-    height: 40px;
-}
-.mentoria img:last-child{
-    display:none;
-}
-.mentoria:hover img:last-child{
-    display:block;
-}
-.mentoria:hover img:first-child{
-    display:none;
-}
-
-.perfil{
-    align-items: center;
-    display: inline-flex;
-}
-.perfil img{
-    height: 40px;
-}
-.perfil img:last-child{
-    display:none;
-}
-.perfil:hover img:last-child{
-    display:block;
-}
-.perfil:hover img:first-child{
-    display:none;
-}
 
 .articulo1{
     /*border: 1px solid black;*/
@@ -156,20 +166,4 @@ input{
     border-radius:4px;
     float: right;
     margin-right: 60px;
-}
-
-
-@media (max-width:700px){
-    header{
-        flex-direction: row;
-    }
-    nav{
-        padding: 10px 0px;
-    }
-    .logo{
-        right: 40%;
-    }
-    .logo img{
-        display:none;
-    }
 }

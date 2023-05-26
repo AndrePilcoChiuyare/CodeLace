@@ -6,29 +6,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>CodeLace</title>
 		<link rel="stylesheet" href="assets/css/style.css">
-		<title>CodeLace</title>
+		<script src="https://kit.fontawesome.com/a80e29a7c1.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<header>
-			<a href="#" class="menu">
-				<img src="assets/img/menu.png" alt="Menú">
-				<img src="assets/img/menu_hover.png" alt="Menú">
-			</a>
-			<nav>
-				<a href="#" class="mentoria">
-					<img src="assets/img/reservation.png" alt="Mentorías reservadas">
-					<img src="assets/img/reservation_hover.png" alt="Mentorías reservadas">
-				</a>
-				<a href="#" class="perfil">
-					<img src="assets/img/profile.png" alt="Perfil">
-					<img src="assets/img/profile_hover.png" alt="Perfil">
-				</a>
-			</nav>
-			<a href="" class="logo">
-				<h1 class="CodeLace">CodeLace</h1>
-				<img src="assets/img/codelace_logo.png" alt="Logo CodeLace">
-			</a>
-		</header>
+		<section class="grid-container-menu">
+			<article class="celdaGrid">
+				<i class="fa-solid fa-bars fa-2xl" alt="menu" id="menuIcon"></i>
+				<ul class="menuDesplegable">
+					<li><a href="#Pantalla">Pantalla Principal</a></li>
+					<li><a href="#Acercadenosotros">Acerca de nosotros</a></li>
+					<li><a href="#Ayuda">Ayuda</a></li>
+				</ul>
+			</article>
+			<article class="celdaGrid">
+				<a href="" id="logo">CodeLace</a>
+			</article>
+			<article class="celdaGrid">
+				<a href="#mentoria"><i class="fa-solid fa-person-chalkboard fa-2xl" alt="mentorias" id="mentoriaIcon"></i></a>
+			</article>
+			<article class="celdaGrid">
+				<i class="fa-solid fa-user fa-2xl" alt="perfil" id="perfilIcon"></i>
+				<ul class="perfilDesplegable">
+					<li><a href="#DatosPersonales">Datos Personales</a></li>
+					<li><a href="#HistorialMentorias">Historial de mentorías</a></li>
+					<li><a href="#CodelacePlus">CodeLace Plus</a></li>
+					<li><a href="#Ingresar">Ingresar</a></li>
+				</ul>
+			</article>
+		</section>
 		<article class="articulo1">
 			<form action="">
             	<input type="search" id="searchID" name="search" placeholder="Buscar mentorías">
