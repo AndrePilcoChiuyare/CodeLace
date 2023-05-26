@@ -5,12 +5,19 @@ body{
     background-color: #393646;
 }
 section.grid-container-menu{
-    border: 1px solid red;
     display:grid;
     grid-template-columns: 7.5% 77.5% 7.5% 7.5%;
 }
+section.grid-container-seccion{
+    display:grid;
+    grid-template-columns: 7.5% 77.5% 7.5% 7.5%;
+    border: 1px solid red;
+}
 article.celdaGrid {
     text-align: center;
+}
+article.celdaGrid-seccion{
+
 }
 i{
     color: #6f6988;
@@ -40,15 +47,18 @@ ul.menuDesplegable{
     cursor: pointer;
     border-radius: 5px 5px 5px 5px ;
     text-align: start;
-    color: #F4EEE0;
 }
 .menuDesplegable > li{
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.menuDesplegable > li:hover{
+.menuDesplegable > li > a:hover{
     color:#FFD369;
     font-weight: bold;
+}
+.menuDesplegable > li > a{
+    text-decoration: none;
+    color: #F4EEE0;
 }
 ul.perfilDesplegable{
     display:none;
@@ -66,9 +76,8 @@ ul.perfilDesplegable{
     cursor: pointer;
     border-radius: 5px 5px 5px 5px ;
     text-align: start;
-    color: #F4EEE0;
 }
-.perfilDesplegable > li:hover{
+.perfilDesplegable > li > a:hover{
     color:#FFD369;
     font-weight: bold;
 }
@@ -85,4 +94,8 @@ ul.perfilDesplegable{
 }
 #logo:hover{
     color: #6f6988;
+}
+ul.perfilDesplegable > li > a{
+    text-decoration: none;
+    color: #F4EEE0;
 }
