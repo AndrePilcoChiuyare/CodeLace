@@ -7,7 +7,7 @@ body{
 section.grid-container-menu{
     background-color: #393646;
     display:grid;
-    grid-template-columns: 7.5% 77.5% 7.5% 7.5%;
+    grid-template-columns: 5.25% 5.25% 79% 5.25% 5.25%;
     position:fixed;
     left:0;
     top:0;
@@ -103,22 +103,6 @@ a{
     text-decoration: none;
     color: white;
 }
-form{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-input{
-    border-radius: 35px;
-    border: 1px;
-    width: 200px;
-    height: 30px;
-    padding-left: 10px;
-}
 
 section.seccion1{
     /* border: 4px solid rgb(3, 255, 54); */
@@ -178,6 +162,10 @@ section.espacio{
     border: 3px solid rgb(168, 255, 7);
     height: 30px;
 }
+section#espacioPrueba{
+    height:500px;
+    border: 3px solid rgb(168, 255, 7);
+}
 .celdaGrid > div.buttonDiv{
     /* border: 1px solid rgb(246, 44, 8); */
     display: flex;
@@ -195,6 +183,21 @@ section.espacio{
 .button:hover{
     background-color: #393646;
     color: #FFD369;
+}
+
+section.seccion1 > div.buscador{
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+input.src{
+    padding:9px 10px 9px 32px;
+    margin-top: 10px;
+    outline:none;
+    background-color: #F4EEE0;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
 }
 
 @media(max-width: 1220px){
