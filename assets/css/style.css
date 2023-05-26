@@ -197,7 +197,7 @@ section.espacio{
     color: #FFD369;
 }
 
-@media(max-width: 1120px){
+@media(max-width: 1220px){
     section.seccion1 > section.seccionInterna{
         display:grid;
         grid-template-columns: 100%;
