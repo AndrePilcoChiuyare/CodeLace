@@ -193,6 +193,7 @@ a#boton2{
 }
 
 .articulo2{
+    position: relative;
     margin: auto;
     margin-top: 20%;
     margin-left: 1.75%;
@@ -204,8 +205,19 @@ a#boton2{
     height: 750px;
 }
 
+.articulo2 img{
+    width: 650px;
+    border-radius:4px;
+    margin-right: 60px;
+    position: absolute;
+    right: -40%;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
 #a2{
     width: 50%;
+    float: left;
 }
 
 p#a2p1{
