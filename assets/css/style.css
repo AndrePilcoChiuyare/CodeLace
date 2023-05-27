@@ -202,6 +202,9 @@ input.src{
     border-radius: 25px;
     font-size: 18px;
 }
+div.buscador > i{
+
+}
 /*
 .hl1{
     display: inline-block;
@@ -267,7 +270,7 @@ a#boton2{
 .articulo2{
     position: relative;
     margin: auto;
-    margin-top: 20%;
+    margin-top: -10%;
     margin-left: 1.75%;
     width: 70%;
     color: #4F4557;
@@ -283,8 +286,8 @@ a#boton2{
     margin-right: 20%;
     position: absolute;
     right: -57%;
-    top: 55%;
-    transform: translateY(-30%);
+    top: 30%;
+    /* transform: translateY(-30%); */
 }
 
 #a2{
@@ -429,11 +432,13 @@ p#a4p5{
     background-color: #F4EEE0;
     text-align: center;
     margin: 0 auto;
+    margin-top: 50px;
     padding: 0;
     position: relative;
     width: 80%;
     height: 500px;
     border-radius: 5px;
+    z-index: 1;
 }
 
 .title-lenguajes{
@@ -446,6 +451,13 @@ p#a4p5{
     width: 450px;
     display: flex;
     overflow-x: scroll;
+}
+.celdaGrid > img, .articulo2 > img{
+    
+    transition: transform 0.5s;
+}
+.celdaGrid > img:hover, .articulo2 > img:hover{
+    transform: scale(0.97);
 }
 
 .lenguajes__gallery div,

@@ -142,21 +142,47 @@
 		let nextarrow = document.getElementById("nextarrow")
 		let backarrow2 = document.getElementById("backarrow2")
 		let nextarrow2 = document.getElementById("nextarrow2")
+		let cnt = 0
+		let cnt2 =0
 
 		backarrow.addEventListener("click", () => {
-			scrollC.scrollLeft -= 150;
+			if (cnt > 0) {
+				scrollC.scrollLeft -= 150;
+				cnt--;
+			} else {
+				scrollC.scrollLeft = 450;
+				cnt = 3;
+			}
 		})
 		
 		nextarrow.addEventListener("click", () => {
-			scrollC.scrollLeft +=150;
+			if (cnt<3) {
+				scrollC.scrollLeft +=150;
+				cnt++;
+			} else {
+				scrollC.scrollLeft =0;
+				cnt=0;
+			}
 		})
 
 		backarrow2.addEventListener("click", () => {
-			scrollC2.scrollLeft -= 150;
+			if (cnt2 > 0) {
+				scrollC2.scrollLeft -= 150;
+				cnt2--;
+			} else {
+				scrollC2.scrollLeft = 450;
+				cnt2 = 3;
+			}
 		})
 		
 		nextarrow2.addEventListener("click", () => {
-			scrollC2.scrollLeft +=150;
+			if (cnt2<3) {
+				scrollC2.scrollLeft +=150;
+				cnt2++;
+			}else{
+				scrollC2.scrollLeft =0;
+				cnt2=0;
+			}
 		})
 	</script>
 </html>
