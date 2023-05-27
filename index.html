@@ -136,9 +136,12 @@
 		let cnt2 =0
 
 		backarrow.addEventListener("click", () => {
-			if (cnt!=0) {
+			if (cnt > 0) {
 				scrollC.scrollLeft -= 150;
 				cnt--;
+			} else {
+				scrollC.scrollLeft = 450;
+				cnt = 3;
 			}
 		})
 		
@@ -146,16 +149,19 @@
 			if (cnt<3) {
 				scrollC.scrollLeft +=150;
 				cnt++;
-			} else{
+			} else {
 				scrollC.scrollLeft =0;
 				cnt=0;
 			}
 		})
 
 		backarrow2.addEventListener("click", () => {
-			if (cnt2!=0) {
+			if (cnt2 > 0) {
 				scrollC2.scrollLeft -= 150;
 				cnt2--;
+			} else {
+				scrollC2.scrollLeft = 450;
+				cnt2 = 3;
 			}
 		})
 		
