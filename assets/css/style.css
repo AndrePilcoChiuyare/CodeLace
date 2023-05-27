@@ -211,7 +211,7 @@ input.src{
     display: inline-block;
     position: relative;
     font-weight: 900;
-    
+    z-index: 4;
 }
 .hl1::before {
     /* Highlight color */
@@ -224,6 +224,14 @@ input.src{
     left: -2px;
     bottom: 0;
     z-index: -1;
+}
+h2 > .hl1{
+    padding-top: 30px;
+    color: #393646;
+}
+
+h2 > .hl1::before{
+    background-color: #FFD369;
 }
 a#boton2{
     margin-left: 10%;
@@ -324,6 +332,71 @@ p#a2p3{
     width: 450px;
     float: right;
 }
+/*PARTE SEBASTIAN*/
+/*LENGUAJES POPULARES*/
+.sebastian{
+    background-color: #F4EEE0;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 80%;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.title-lenguajes{
+    padding-top: 20px;
+}
+
+
+.lenguajes__gallery,
+.mentors__gallery{
+    width: 450px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.lenguajes__gallery div,
+.mentors__gallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    /* padding: 10px; */
+    flex: none;
+}
+
+.gallery-wrap img{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s;
+}
+
+.gallery-wrap .arrow{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 10px
+}
+
+.lenguajes__gallery::-webkit-scrollbar,
+.mentors__gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% auto;
+}
+
+.gallery-wrap img:hover{
+    cursor: pointer;
+    transform: scale(0.8);
+}
+/* FIN PARTE SEBASTIAN */
 
 @media(max-width: 1220px){
     section.seccion1 > section.seccionInterna{
@@ -394,3 +467,4 @@ p#a2p3{
     float: right;
     margin-right: 60px;
 } */
+

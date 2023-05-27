@@ -56,8 +56,45 @@
 				</article>
 			</section>
 		</section>
-		<!-- <section class="espacio"></section>
-		<section id="espacioPrueba"></section> -->
+		<!-- PARTE SEBASTIAN -->
+		<section class="sebastian">
+			<h2><span class="hl1">Lenguajes Populares</span></h2>
+			<article class="gallery-wrap"> 
+				<img class="arrow" src="./assets/img/next7.png" alt="" id="backarrow">
+				<div class="lenguajes__gallery">
+					<div>
+						<span><img src="./assets/img/python.png" alt=""></span>
+						<span><img src="./assets/img/c-1.png" alt=""></span>
+						<span><img src="./assets/img/js1.png" alt=""></span>
+					</div>
+					<div>
+						<span><img src="./assets/img/java.png" alt=""></span>
+						<span><img src="./assets/img/csharp.png" alt=""></span>
+						<span><img src="./assets/img/go.png" alt=""></span>
+					</div>
+				</div>
+				<img class="arrow" src="./assets/img/next8.png" alt="" id="nextarrow">
+			</article>
+			
+
+			<h2><span class="hl1">Mentores Destacados</span></h2>
+			<article class="gallery-wrap"> 
+				<img class="arrow" src="./assets/img/next7.png" alt="" id="backarrow2">
+				<div class="mentors__gallery">
+					<div>
+						<span><img src="./assets/img/mentor1.png" alt=""></span>
+						<span><img src="./assets/img/mentor2.png" alt=""></span>
+						<span><img src="./assets/img/mentor3.png" alt=""></span>
+					</div>
+					<div>
+						<span><img src="./assets/img/java.png" alt=""></span>
+						<span><img src="./assets/img/csharp.png" alt=""></span>
+						<span><img src="./assets/img/go.png" alt=""></span>
+					</div>
+				</div>
+				<img class="arrow" src="./assets/img/next8.png" alt="" id="nextarrow2">
+			</article>
+		</section>
 		<section class="seccion3">
             <article class="vcenter" id="a2">
                 <p id="a2p1">CodeLace Plus</p>
@@ -75,4 +112,28 @@
 			</article>
 		</section>
 	</body>
+	<script>
+		let scrollC = document.querySelector(".lenguajes__gallery")
+		let scrollC2 = document.querySelector(".mentors__gallery")
+		let backarrow = document.getElementById("backarrow")
+		let nextarrow = document.getElementById("nextarrow")
+		let backarrow2 = document.getElementById("backarrow2")
+		let nextarrow2 = document.getElementById("nextarrow2")
+
+		backarrow.addEventListener("click", () => {
+			scrollC.scrollLeft -= 150;
+		})
+		
+		nextarrow.addEventListener("click", () => {
+			scrollC.scrollLeft +=150;
+		})
+
+		backarrow2.addEventListener("click", () => {
+			scrollC2.scrollLeft -= 150;
+		})
+		
+		nextarrow2.addEventListener("click", () => {
+			scrollC2.scrollLeft +=150;
+		})
+	</script>
 </html>
