@@ -146,12 +146,18 @@
 		let cnt2 =0
 
 		backarrow.addEventListener("click", () => {
+<<<<<<< HEAD
 			if (cnt > 0) {
 				scrollC.scrollLeft -= 150;
 				cnt--;
 			} else {
 				scrollC.scrollLeft = 450;
 				cnt = 3;
+=======
+			if (cnt!=0) {
+				scrollC.scrollLeft -= 150;
+				cnt--;
+>>>>>>> cefa69d18964819815156fa78150f1be8ca391fb
 			}
 		})
 		
@@ -159,19 +165,29 @@
 			if (cnt<3) {
 				scrollC.scrollLeft +=150;
 				cnt++;
+<<<<<<< HEAD
 			} else {
+=======
+			} else{
+>>>>>>> cefa69d18964819815156fa78150f1be8ca391fb
 				scrollC.scrollLeft =0;
 				cnt=0;
 			}
 		})
 
 		backarrow2.addEventListener("click", () => {
+<<<<<<< HEAD
 			if (cnt2 > 0) {
 				scrollC2.scrollLeft -= 150;
 				cnt2--;
 			} else {
 				scrollC2.scrollLeft = 450;
 				cnt2 = 3;
+=======
+			if (cnt2!=0) {
+				scrollC2.scrollLeft -= 150;
+				cnt2--;
+>>>>>>> cefa69d18964819815156fa78150f1be8ca391fb
 			}
 		})
 		
