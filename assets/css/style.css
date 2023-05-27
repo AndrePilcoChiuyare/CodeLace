@@ -508,7 +508,7 @@ p#a4p5{
 }
 /* FIN PARTE SEBASTIAN */
 section.footer{
-    border: 4px solid rgb(3, 255, 54);
+    /* border: 4px solid rgb(3, 255, 54); */
     background-color: #4F4557;
     margin: 0px;
     color: #F4EEE0;
@@ -516,6 +516,22 @@ section.footer{
 .footer > .celdaGrid > p{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.video__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video__container article h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.video__container iframe{
+    border-style: hidden;
+    border-radius: 15px;
 }
 #f1{
     font-size: 40px;
