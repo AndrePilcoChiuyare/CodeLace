@@ -399,9 +399,62 @@ p#a2p3{
 /*LENGUAJES POPULARES*/
 .sebastian{
     background-color: #F4EEE0;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 80%;
+    height: 500px;
 }
 
-.lenguajes img{
+.title-lenguajes{
+    padding-top: 20px;
+}
+
+
+.lenguajes__gallery,
+.mentors__gallery{
+    width: 450px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.lenguajes__gallery div,
+.mentors__gallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    /* padding: 10px; */
+    flex: none;
+}
+
+.gallery-wrap img{
     width: 100px;
     height: 100px;
+    transition: transform 0.5s;
+}
+
+.gallery-wrap .arrow{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 10px
+}
+
+.lenguajes__gallery::-webkit-scrollbar,
+.mentors__gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% auto;
+}
+
+.gallery-wrap img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
