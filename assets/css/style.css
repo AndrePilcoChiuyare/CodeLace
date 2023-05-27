@@ -365,15 +365,15 @@ p#a4p5{
 .imagencod {
     position: absolute;
     z-index: -1;
-    right: 0; /* Coloca el contenedor en la extrema derecha. */
-    width: 50%; /* Hace que el contenedor tenga la mitad del ancho. */
+    right: 0; 
+    width: 50%;
     height: 550px;
     margin-top: -550px;
 }
 
 .imagencod img {
     position: absolute;
-    right: 0; /* Coloca la imagen en la extrema derecha del contenedor. */
+    right: 0; 
     width: 100%; 
     height: 550px;
     border-radius: 4px;
