@@ -499,6 +499,28 @@ p#a4p5{
     cursor: pointer;
     transform: scale(0.8);
 }
+
+.video__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video__container article h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    color:#FFD369;
+    margin-bottom: 20px;
+}
+
+.video__container iframe{
+    border-style: hidden;
+    border-radius: 15px;
+}
+
+/* video::-webkit-media-controls {
+    display: none;
+} */
 /* FIN PARTE SEBASTIAN */
 
 @media(max-width: 1220px){
