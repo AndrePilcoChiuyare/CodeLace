@@ -161,6 +161,7 @@ p#p3{
     font-size: 30px;
 }
 section.espacio{
+    margin-top: 0px;
     border: 3px solid rgb(168, 255, 7);
     height: 30px;
 }
@@ -264,6 +265,7 @@ a#boton2{
 }
 
 .articulo2{
+    position: relative;
     margin: auto;
     margin-top: 20%;
     margin-left: 1.75%;
@@ -273,6 +275,16 @@ a#boton2{
     background-color: #FFD369;
     padding-left: 20px;
     height: 750px;
+}
+.articulo2 img{
+    z-index: 4;
+    width: 900px;
+    border-radius:4px;
+    margin-right: 20%;
+    position: absolute;
+    right: -57%;
+    top: 55%;
+    transform: translateY(-30%);
 }
 
 #a2{
@@ -309,54 +321,30 @@ p#a2p3{
     transform: translateY(-50%);
 }
 .articulo3{
+    position: relative;
+    justify-content: center;
     margin: auto;
     margin-top: -8%;
-    margin-left: 20%;
-    width: 60%;
+    width: 65%;
     color: #FFD369; 
     border-radius: 4px;
     background-color:#4F4557;
     padding-left: 20px;
     height: 550px;
 }
-p#a3p1{
+
+p#a3p1, p#a3p2, p#a3p3, p#a3p4{
     text-align: left;
     font-weight: 800;
     left: 7.5%;
     font-size: 36px;
 }
-p#a3p2{
-    text-align: left;
-    font-weight: 800;
-    left: 7.5%;
-    font-size: 36px;
-}
-p#a3p3{
-    text-align: left;
-    font-weight: 800;
-    left: 7.5%;
-    font-size: 36px;
-}
-p#a3p4{
-    text-align: left;
-    font-weight: 800;
-    left: 7.5%;
-    font-size: 36px;
-}
-p#a3p5{
+
+p#a3p5, p#a3p6, p#a3p7{
     text-align: right;
     font-weight: bold;
     font-size: 96px;
-}
-p#a3p6{
-    text-align: right;
-    font-weight: bold;
-    font-size: 96px;
-}
-p#a3p7{
-    text-align: right;
-    font-weight: bold;
-    font-size: 96px;
+    margin-right: 20px;
 }
 .promo{
     position: relative;
@@ -364,12 +352,13 @@ p#a3p7{
     transform: translateY(-50%);
 }
 .articulo4{
+    position:relative;
     margin: auto;
-    margin-top: -12%;
+    margin-top: -18%;
     margin-left: 0%;
-    width: 45%;
+    width: 46%;
     color: #393646; 
-    border-radius: 4px;
+    border-radius: 4px 4px 0px 0px;
     background-color:#f4eee0;
     padding-left: 2.5%;
     padding-right: 2.5%;
@@ -424,14 +413,14 @@ p#a4p5{
     right: 0; 
     width: 50%;
     height: 550px;
-    margin-top: -550px;
+    margin-top: -600px;
 }
 
 .imagencod img {
     position: absolute;
     right: 0; 
     width: 100%; 
-    height: 550px;
+    height: 700px;
     border-radius: 4px;
 }
 /*PARTE SEBASTIAN*/
