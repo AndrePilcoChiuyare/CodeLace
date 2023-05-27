@@ -158,6 +158,8 @@ p#p3{
     font-weight: lighter;
     font-size: 30px;
 }
+
+
 section.espacio{
     border: 3px solid rgb(168, 255, 7);
     height: 30px;
@@ -211,12 +213,11 @@ input.src{
     display: inline-block;
     position: relative;
     font-weight: 900;
-    
+    z-index: 4;
 }
 .hl1::before {
     /* Highlight color */
     background-color: #9073A7;
-
     content: "";
     position: absolute;
     width: calc(100% + 4px);
@@ -225,6 +226,16 @@ input.src{
     bottom: 0;
     z-index: -1;
 }
+
+h2 > .hl1{
+    padding-top: 20px;
+    color: #393646;
+}
+
+h2 > .hl1::before{
+    background-color: #FFD369;
+}
+
 a#boton2{
     margin-left: 10%;
     padding-left: 60px;
@@ -405,6 +416,7 @@ p#a2p3{
     position: relative;
     width: 80%;
     height: 500px;
+    border-radius: 5px;
 }
 
 .title-lenguajes{
@@ -458,3 +470,4 @@ p#a2p3{
     cursor: pointer;
     transform: scale(1.1);
 }
+/* FIN PARTE SEBASTIAN */
