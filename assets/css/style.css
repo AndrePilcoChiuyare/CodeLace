@@ -149,7 +149,7 @@ section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg{
 section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg > img{
     border-radius: 5px;
     /* height: 700px; */
-    height: 90%;
+    width: 40%;
     position:absolute;
     margin-top: 20px;
 }
@@ -288,7 +288,7 @@ a#boton2{
 }
 .articulo2 img{
     z-index: 4;
-    width: 900px;
+    width: 80%;
     border-radius:4px;
     margin-right: 20%;
     position: absolute;
