@@ -547,9 +547,95 @@ section.footer{
     margin-bottom: 30px;
 }
 
-@media(max-width: 1220px){
+@media screen and (max-width: 768px) {
+
     section.seccion1 > section.seccionInterna{
-        display:grid;
-        grid-template-columns: 100%;
+        display:flex;
+        flex-direction: column;
     }
+
+    section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg > img{
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        margin-top: 20px;
+        position: static
+    }
+
+    .sebastian{
+        width: 90%;
+        height: 400px;
+        background-color: #F4EEE0;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .articulo2{
+        width: 90%;
+        position:unset;
+        margin-top: 50px;
+        border-radius: 4px;
+        height: 770px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .articulo2 img{
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 80%;
+        height: 80%;
+        position: static;
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+    #a2{
+        position: static;
+        width: 100%;
+        margin-top: 250px;
+    }
+
+    p#a2p2{
+        width: 50%;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+    p#a2p3{
+        width:50%;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-left: 140px;
+    }
+
+    .articulo3{
+        margin-top: 50px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .articulo4{
+        width: 90%;
+        padding: 0;
+        margin: 30px auto;
+    }
+
+
+    #a4 p{
+        font-size: 35px;
+    }
+
+    .videocontainer article{
+        text-align: center;
+    }
+
+    .videocontainer article iframe{
+        width: 320px;
+        height: 400px;
+    }
+
+
 }
