@@ -636,6 +636,8 @@ section.footer{
         width: 320px;
         height: 400px;
     }
-
+    .imagencod img {
+        display: none;
+    }
 
 }
