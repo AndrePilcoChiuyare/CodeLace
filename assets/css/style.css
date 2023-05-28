@@ -632,8 +632,9 @@ section.footer{
         text-align: center;
     }
 
-    iframe{
-        width: 100%;
+    .video__container article iframe{
+        width: 320px;
+        height: 400px;
     }
     
 
