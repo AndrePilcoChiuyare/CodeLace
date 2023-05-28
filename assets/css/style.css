@@ -617,4 +617,24 @@ section.footer{
         padding: 0;
     }
 
+    .articulo4{
+        width: 90%;
+        padding: 0;
+        margin: 30px auto;
+    }
+
+
+    #a4 p{
+        font-size: 35px;
+    }
+
+    .video__container article{
+        text-align: center;
+    }
+
+    iframe{
+        width: 100%;
+    }
+    
+
 }
