@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
+    border: 1px dashed red;
 }
 body{
     background-color: #393646;
@@ -93,11 +94,15 @@ ul.perfilDesplegable{
     padding-right: 5px;
 }
 #logo{
+    padding-top: 5px;
+    display: flex;
     text-decoration: none;
     color: #FFD369;
     font-weight: bolder;
     font-size: 40px;
     text-align: center;
+    justify-content: center;
+    vertical-align: center;
 }
 #logo:hover{
     color: #6f6988;
@@ -372,7 +377,6 @@ p#a3p5, p#a3p6, p#a3p7{
     background-color:#f4eee0;
     padding-left: 2.5%;
     padding-right: 2.5%;
-    height: 350px;
 }
 
 .espacio {
@@ -408,7 +412,7 @@ p#a4p4{
 p#a4p5{
     text-align: right;
     font-weight: bold;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     font-size: 36px;
 }
 .promo{
@@ -531,8 +535,11 @@ section.footer{
 }
 
 .video__container iframe{
+    display: flex;
     border-style: hidden;
     border-radius: 15px;
+    width:100%; 
+    height: 100%;
 }
 #f1{
     font-size: 40px;
@@ -633,11 +640,19 @@ section.footer{
     }
 
     .videocontainer article iframe{
-        width: 320px;
-        height: 400px;
+        
     }
     .imagencod img {
         display: none;
     }
-
+    section.grid-container-menu{
+        grid-template-columns: 5.25% 0% 60% auto auto;
+    }
+    p#a3p5, p#a3p6, p#a3p7{
+        font-size: 70px;
+    }
+    p#p1{
+        font-weight: bolder;
+        font-size: 50px;
+    }
 }
