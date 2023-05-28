@@ -614,7 +614,7 @@ section.footer{
 
     .articulo3{
         margin-top: 50px;
-        width: 100%;
+        width: 90%;
         padding: 0;
     }
 
@@ -641,6 +641,9 @@ section.footer{
     }
     p#a3p5, p#a3p6, p#a3p7{
         font-size: 70px;
+    }
+    p#a3p1, p#a3p2, p#a3p3, p#a3p4{
+        padding:10px;
     }
     p#p1{
         font-weight: bolder;
