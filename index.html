@@ -107,7 +107,7 @@
 						<span><img src="./assets/img/mentor3.png" alt=""></span>
 					</div>
 					<div>
-						<span><img src="./assets/img/java.png" alt=""></span>
+						<span><img class = "java_icon" src="./assets/img/java.png" alt=""></span>
 						<span><img src="./assets/img/csharp.png" alt=""></span>
 						<span><img src="./assets/img/go.png" alt=""></span>
 					</div>
@@ -186,44 +186,91 @@
 		let nextarrow2 = document.getElementById("nextarrow2")
 		let cnt = 0
 		let cnt2 =0
+		let w = window.innerWidth
+		let h = window.innerHeight
 
 		backarrow.addEventListener("click", () => {
-			if (cnt > 0) {
-				scrollC.scrollLeft -= 150;
-				cnt--;
-			} else {
-				scrollC.scrollLeft = 450;
-				cnt = 3;
+
+			if (w<768){
+				if (cnt > 0) {
+					scrollC.scrollLeft -= 110;
+					cnt--;
+				} else {
+					scrollC.scrollLeft = 320;
+					cnt = 3;
+				}
+			} else{
+				if (cnt > 0) {
+					scrollC.scrollLeft -= 150;
+					cnt--;
+				} else {
+					scrollC.scrollLeft = 450;
+					cnt = 3;
+				}
 			}
+			
 		})
 		
 		nextarrow.addEventListener("click", () => {
-			if (cnt<3) {
-				scrollC.scrollLeft +=150;
-				cnt++;
+
+			if (w<768){
+				if (cnt < 3){
+					scrollC.scrollLeft += 110;
+					cnt++;
+				} else {
+					scrollC.scrollLeft = 0;
+					cnt=0;
+				}
 			} else {
-				scrollC.scrollLeft =0;
-				cnt=0;
+				if (cnt<3) {
+					scrollC.scrollLeft += 150;
+					cnt++;
+				} else {
+					scrollC.scrollLeft = 0;
+					cnt=0;
+				}
 			}
+
+			
 		})
 
 		backarrow2.addEventListener("click", () => {
-			if (cnt2 > 0) {
-				scrollC2.scrollLeft -= 150;
-				cnt2--;
-			} else {
-				scrollC2.scrollLeft = 450;
-				cnt2 = 3;
+			if (w<768){
+				if (cnt2 > 0) {
+					scrollC2.scrollLeft -= 110;
+					cnt2--;
+				} else {
+					scrollC2.scrollLeft = 320;
+					cnt2 = 3;
+				}
+			} else{
+				if (cnt2 > 0) {
+					scrollC2.scrollLeft -= 150;
+					cnt2--;
+				} else {
+					scrollC2.scrollLeft = 450;
+					cnt2 = 3;
+				}
 			}
 		})
 		
 		nextarrow2.addEventListener("click", () => {
-			if (cnt2<3) {
-				scrollC2.scrollLeft +=150;
-				cnt2++;
-			}else{
-				scrollC2.scrollLeft =0;
-				cnt2=0;
+			if (w<768){
+				if (cnt2 < 3){
+					scrollC2.scrollLeft += 110;
+					cnt2++;
+				} else {
+					scrollC2.scrollLeft = 0;
+					cnt2=0;
+				}
+			} else {
+				if (cnt2<3) {
+					scrollC2.scrollLeft += 150;
+					cnt2++;
+				} else {
+					scrollC2.scrollLeft = 0;
+					cnt2=0;
+				}
 			}
 		})
 	</script>
