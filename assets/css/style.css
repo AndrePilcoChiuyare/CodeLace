@@ -16,14 +16,19 @@ section.grid-container-menu{
     width: 100%;
     z-index: 10;
 }
-
 article.celdaGrid {
     text-align: center;
 }
-i{
+.grid-container-menu > .celdaGrid > i, .grid-container-menu > .celdaGrid > a >i{
     color: #6f6988;
-    position: fixed;
+    position: relative;
     top:21px;
+    padding-bottom: 50px;
+}
+li>i{
+    margin-left: 5px;
+    color:#FFD369;
+    position:static;
 }
 ul.menuDesplegable{
     display:none;
@@ -41,9 +46,9 @@ ul.menuDesplegable{
 .celdaGrid:hover .menuDesplegable{
     display:block;
     position: fixed;
-    top:30px;
+    top:40px;
     background-color: #6f6988;
-    width: 200px;
+    width: 250px;
     list-style: none;
     cursor: pointer;
     border-radius: 5px 5px 5px 5px ;
@@ -70,13 +75,13 @@ ul.perfilDesplegable{
 .celdaGrid:hover .perfilDesplegable{
     display:block;
     position: fixed;
-    top:32px;
+    top:40px;
     background-color: #6f6988;
-    width: 200px;
+    width: 250px;
     list-style: none;
     cursor: pointer;
     border-radius: 5px 5px 5px 5px ;
-    text-align: start;
+    text-align:end;
 }
 .perfilDesplegable > li > a:hover{
     color:#FFD369;
@@ -85,6 +90,7 @@ ul.perfilDesplegable{
 .perfilDesplegable > li{
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-right: 5px;
 }
 #logo{
     text-decoration: none;
@@ -108,7 +114,7 @@ a{
 
 section.seccion1{
     /* border: 4px solid rgb(3, 255, 54); */
-    margin-top: 50px;
+    margin-top: 60px;
     background-color: #4F4557;
     border-radius: 5px;
     margin-right: 10px;
@@ -164,6 +170,7 @@ section.espacio{
     margin-top: 0px;
     border: 3px solid rgb(168, 255, 7);
     height: 30px;
+    margin:0px;
 }
 section#espacioPrueba{
     height:500px;
@@ -499,7 +506,17 @@ p#a4p5{
     cursor: pointer;
     transform: scale(0.8);
 }
-
+/* FIN PARTE SEBASTIAN */
+section.footer{
+    /* border: 4px solid rgb(3, 255, 54); */
+    background-color: #4F4557;
+    margin: 0px;
+    color: #F4EEE0;
+}
+.footer > .celdaGrid > p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 .video__container {
     display: flex;
     flex-direction: column;
@@ -507,9 +524,9 @@ p#a4p5{
 }
 
 .video__container article h1{
+    margin-top: 30px;
     font-size: 50px;
     font-family: sans-serif;
-    color:#FFD369;
     margin-bottom: 20px;
 }
 
@@ -517,15 +534,87 @@ p#a4p5{
     border-style: hidden;
     border-radius: 15px;
 }
+#f1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+#f2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.footer > .celdaGrid > i{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
 
-/* video::-webkit-media-controls {
-    display: none;
-} */
-/* FIN PARTE SEBASTIAN */
+@media screen and (max-width: 767px) {
 
-@media(max-width: 1220px){
     section.seccion1 > section.seccionInterna{
-        display:grid;
-        grid-template-columns: 100%;
+        display:flex;
+        flex-direction: column;
     }
+
+    section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg > img{
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        margin-top: 20px;
+        position: static
+    }
+
+    .sebastian{
+        width: 90%;
+        height: 400px;
+        background-color: #F4EEE0;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .articulo2{
+        width: 90%;
+        position:unset;
+        margin-top: 50px;
+        border-radius: 4px;
+        height: 770px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .articulo2 img{
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 80%;
+        height: 80%;
+        position: static;
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+
+    #a2{
+        position: static;
+        width: 100%;
+        margin-top: 250px;
+    }
+
+    p#a2p2{
+        width: 50%;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    
+    p#a2p3{
+        width:50%;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-left: 140px;
+    }
+
+    .articulo3{
+        margin-top: 50px;
+        width: 100%;
+        padding: 0;
+    }
+
 }
