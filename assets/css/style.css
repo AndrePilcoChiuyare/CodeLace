@@ -549,7 +549,9 @@ section.footer{
 }
 
 @media screen and (max-width: 768px) {
-
+    #logo{
+        padding-left: 30px;
+    }
     section.seccion1 > section.seccionInterna{
         display:flex;
         flex-direction: column;
@@ -648,5 +650,28 @@ section.footer{
     p#p1{
         font-weight: bolder;
         font-size: 50px;
+    }
+    .articulo2{
+        /* mover!!!! */
+        height: 850px;
+    }
+    .seccion1{
+        /* border: 3px solid red; */
+    }
+    #menuIcon{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .seccion1{
+        /* border: 3px solid green; */
+    }
+    .articulo3{
+        /* border: 3px solid green; */
+        width: 90%;
+    }
+    .articulo4{
+        width: 40%;
     }
 }
