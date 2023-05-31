@@ -426,7 +426,7 @@ p#a4p5{
     position: absolute;
     z-index: -1;
     right: 0; 
-    width: 50%;
+    width: 60%;
     height: 550px;
     margin-top: -600px;
 }
@@ -664,7 +664,7 @@ section.footer{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px){
+@media screen and (min-width: 769px) and (max-width: 1200px){
     .seccion1{
         /* border: 3px solid green; */
     }
