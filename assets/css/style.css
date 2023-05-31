@@ -293,7 +293,8 @@ a#boton2{
 }
 .articulo2 img{
     z-index: 4;
-    width: 75%;
+    width: 65%;
+    
     border-radius:4px;
     margin-right: 20%;
     position: absolute;
@@ -369,7 +370,7 @@ p#a3p5, p#a3p6, p#a3p7{
 .articulo4{
     position:relative;
     margin: auto;
-    margin-top: -18%;
+    margin-top: -15%;
     margin-left: 0%;
     width: 46%;
     color: #393646; 
