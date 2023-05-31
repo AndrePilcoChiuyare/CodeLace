@@ -341,7 +341,7 @@ p#a2p3{
     justify-content: center;
     margin: auto;
     margin-top: -8%;
-    width: 65%;
+    width: 50%;
     color: #FFD369; 
     border-radius: 4px;
     background-color:#4F4557;
@@ -372,7 +372,7 @@ p#a3p5, p#a3p6, p#a3p7{
     margin: auto;
     margin-top: -15%;
     margin-left: 0%;
-    width: 46%;
+    width: 40%;
     color: #393646; 
     border-radius: 4px 4px 0px 0px;
     background-color:#f4eee0;
@@ -426,7 +426,7 @@ p#a4p5{
     position: absolute;
     z-index: -1;
     right: 0; 
-    width: 50%;
+    width: 60%;
     height: 550px;
     margin-top: -600px;
 }
@@ -664,7 +664,7 @@ section.footer{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px){
+@media screen and (min-width: 769px) and (max-width: 1200px){
     .seccion1{
         /* border: 3px solid green; */
     }
