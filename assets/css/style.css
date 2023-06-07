@@ -205,6 +205,7 @@ section.seccion1 > div.buscador{
     position:relative;
     display: flex;
     justify-content: center;
+    /* outline: 3px solid green; */
 }
 input.src{
     padding:9px 10px 9px 32px;
@@ -214,19 +215,11 @@ input.src{
     border: none;
     border-radius: 25px;
     font-size: 18px;
-    width: 50%;
+    width: 65%;
 }
 div.buscador > i{
 
 }
-/*
-.hl1{
-    display: inline-block;
-    font-weight: 900;
-    background: #9073A7;
-    height: 0.2em
-}
-*/
 .hl1 {
     display: inline-block;
     position: relative;
@@ -236,7 +229,6 @@ div.buscador > i{
 .hl1::before {
     /* Highlight color */
     background-color: #F0F0F0;
-
     content: "";
     position: absolute;
     width: calc(100% + 4px);
