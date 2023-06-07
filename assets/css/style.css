@@ -5,10 +5,10 @@
     /* border: 1px dashed red; */
 }
 body{
-    background-color: #393646;
+    background-color: #21325E;
 }
 section.grid-container-menu{
-    background-color: #393646;
+    background-color: #21325E;
     display:grid;
     grid-template-columns: 5.25% 5.25% 79% 5.25% 5.25%;
     position:fixed;
@@ -21,14 +21,14 @@ article.celdaGrid {
     text-align: center;
 }
 .grid-container-menu > .celdaGrid > i, .grid-container-menu > .celdaGrid > a >i{
-    color: #6f6988;
+    color: #F0F0F0;
     position: relative;
     top:21px;
     padding-bottom: 50px;
 }
 li>i{
     margin-left: 5px;
-    color:#FFD369;
+    color:#CBE4DE;
     position:static;
 }
 ul.menuDesplegable{
@@ -36,19 +36,19 @@ ul.menuDesplegable{
     margin: 10px;
 }
 .celdaGrid:hover > #menuIcon{
-    color: #FFD369;
+    color: #3E497A;
 }
 .celdaGrid:hover > #perfilIcon{
-    color: #FFD369;
+    color: #3E497A;
 }
 .celdaGrid:hover > a >#mentoriaIcon{
-    color: #FFD369;
+    color: #3E497A;
 }
 .celdaGrid:hover .menuDesplegable{
     display:block;
     position: fixed;
     top:40px;
-    background-color: #6f6988;
+    background-color: #61817a;
     width: 250px;
     list-style: none;
     cursor: pointer;
@@ -60,12 +60,12 @@ ul.menuDesplegable{
     padding-bottom: 15px;
 }
 .menuDesplegable > li > a:hover{
-    color:#FFD369;
+    color:#2C3333;
     font-weight: bold;
 }
 .menuDesplegable > li > a{
     text-decoration: none;
-    color: #F4EEE0;
+    color: #CBE4DE;
 }
 ul.perfilDesplegable{
     display:none;
@@ -77,15 +77,19 @@ ul.perfilDesplegable{
     display:block;
     position: fixed;
     top:40px;
-    background-color: #6f6988;
+    background-color: #61817a;
     width: 250px;
     list-style: none;
     cursor: pointer;
     border-radius: 5px 5px 5px 5px ;
     text-align:end;
 }
+.perfilDesplegable > li > a{
+    text-decoration: none;
+    color: #CBE4DE;
+}
 .perfilDesplegable > li > a:hover{
-    color:#FFD369;
+    color:#2C3333;
     font-weight: bold;
 }
 .perfilDesplegable > li{
@@ -97,7 +101,7 @@ ul.perfilDesplegable{
     padding-top: 5px;
     display: flex;
     text-decoration: none;
-    color: #FFD369;
+    color: #F1D00A;
     font-weight: bolder;
     font-size: 40px;
     text-align: center;
@@ -105,22 +109,19 @@ ul.perfilDesplegable{
     vertical-align: center;
 }
 #logo:hover{
-    color: #6f6988;
+    color: #F0F0F0;
 }
-ul.perfilDesplegable > li > a{
-    text-decoration: none;
-    color: #F4EEE0;
-}
+
 
 a{
     text-decoration: none;
-    color: white;
+    /* color: white; */
 }
 
 section.seccion1{
     /* border: 4px solid rgb(3, 255, 54); */
     margin-top: 60px;
-    background-color: #4F4557;
+    background-color: #3E497A;
     border-radius: 5px;
     margin-right: 10px;
     margin-left: 10px;
@@ -143,7 +144,7 @@ section.seccion1 > section.seccionInterna > article.celdaGrid{
 
 section.seccion1 > section.seccionInterna > article.celdaGrid > p{
     padding-left: 20px;
-    color:#FFD369;
+    color:#F1D00A;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -190,14 +191,14 @@ section#espacioPrueba{
 .button{
     font-size: 36px;
     border-radius:10px;
-    background-color: #F4EEE0;
+    background-color: #F0F0F0;
     padding-right: 70px;
     padding-left: 70px;
-    color: #4F4557;
+    color: #21325E;
 }
 .button:hover{
-    background-color: #393646;
-    color: #FFD369;
+    background-color: #21325E;
+    color: #F1D00A;
 }
 
 section.seccion1 > div.buscador{
@@ -209,10 +210,11 @@ input.src{
     padding:9px 10px 9px 32px;
     margin-top: 10px;
     outline:none;
-    background-color: #F4EEE0;
+    background-color: #F0F0F0;
     border: none;
     border-radius: 25px;
     font-size: 18px;
+    width: 50%;
 }
 div.buscador > i{
 
@@ -233,7 +235,7 @@ div.buscador > i{
 }
 .hl1::before {
     /* Highlight color */
-    background-color: #9073A7;
+    background-color: #F0F0F0;
 
     content: "";
     position: absolute;
@@ -245,11 +247,11 @@ div.buscador > i{
 }
 h2 > .hl1{
     padding-top: 30px;
-    color: #393646;
+    color: #21325E;
 }
 
 h2 > .hl1::before{
-    background-color: #FFD369;
+    background-color: #F1D00A;
 }
 .hl2 {
     display: inline-block;
@@ -258,7 +260,7 @@ h2 > .hl1::before{
     
 }
 .hl2::before {
-    background-color: #6d551c;
+    background-color: #21325E;
     content: "";
     position: absolute;
     width: calc(100% + 4px);
@@ -285,9 +287,9 @@ a#boton2{
     margin-top: -10%;
     margin-left: 1.75%;
     width: 70%;
-    color: #4F4557;
+    color: #21325E;
     border-radius: 4px;
-    background-color: #FFD369;
+    background-color: #F1D00A;
     padding-left: 20px;
     height: 750px;
 }
@@ -342,9 +344,9 @@ p#a2p3{
     margin: auto;
     margin-top: -8%;
     width: 50%;
-    color: #FFD369; 
+    color: #F1D00A; 
     border-radius: 4px;
-    background-color:#4F4557;
+    background-color:#3E497A;
     padding-left: 20px;
     height: 550px;
 }
@@ -373,9 +375,9 @@ p#a3p5, p#a3p6, p#a3p7{
     margin-top: -15%;
     margin-left: 0%;
     width: 40%;
-    color: #393646; 
+    color: #21325E; 
     border-radius: 4px 4px 0px 0px;
-    background-color:#f4eee0;
+    background-color:#F0F0F0;
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
@@ -441,13 +443,13 @@ p#a4p5{
 /*PARTE SEBASTIAN*/
 /*LENGUAJES POPULARES*/
 .sebastian{
-    background-color: #F4EEE0;
+    background-color: #F0F0F0;
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
     padding: 0;
     position: relative;
-    width: 80%;
+    width: 65%;
     height: 500px;
     border-radius: 5px;
     z-index: 1;
@@ -513,10 +515,10 @@ p#a4p5{
 }
 /* FIN PARTE SEBASTIAN */
 section.footer{
-    border: 1px solid #4F4557;
-    background-color: #4F4557;
+    border: 1px solid #3E497A;
+    background-color: #3E497A;
     margin: 0px;
-    color: #F4EEE0;
+    color: #F0F0F0;
 }
 .footer > .celdaGrid > p{
     margin-top: 30px;
@@ -569,7 +571,6 @@ section.footer{
     .sebastian{
         width: 90%;
         height: 400px;
-        background-color: #F4EEE0;
         text-align: center;
         margin: 30px auto;
     }
@@ -674,5 +675,8 @@ section.footer{
     }
     .articulo4{
         width: 40%;
+    }
+    .sebastian{
+        width: 90%;
     }
 }
