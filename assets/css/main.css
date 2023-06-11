@@ -1,0 +1,22 @@
+*{
+    font-family: "Lexend";
+}
+.principal{
+    padding: 0px;
+}
+.navbar{
+    background-color: #18122B;
+}
+.prueba{
+    outline: 3px solid green;
+}
+.navbar img{
+    height: 25px;
+}
+.navbar form{
+    padding-top: 10px;
+}
+.navbar-dropdown {
+    max-height: none;
+    overflow: visible;
+}

@@ -1,14 +1,14 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: "Lexend";
     /* border: 1px dashed red; */
 }
 body{
-    background-color: #21325E;
+    background-color: #18122B;
 }
 section.grid-container-menu{
-    background-color: #21325E;
+    background-color: #18122B;
     display:grid;
     grid-template-columns: 5.25% 5.25% 79% 5.25% 5.25%;
     position:fixed;
@@ -21,14 +21,14 @@ article.celdaGrid {
     text-align: center;
 }
 .grid-container-menu > .celdaGrid > i, .grid-container-menu > .celdaGrid > a >i{
-    color: #F0F0F0;
+    color: #FFFFFF;
     position: relative;
     top:21px;
     padding-bottom: 50px;
 }
 li>i{
     margin-left: 5px;
-    color:#3E497A;
+    color:#18122B;
     position:static;
 }
 ul.menuDesplegable{
@@ -36,19 +36,19 @@ ul.menuDesplegable{
     margin: 10px;
 }
 .celdaGrid:hover > #menuIcon{
-    color: #3E497A;
+    color: #beb3e0;
 }
 .celdaGrid:hover > #perfilIcon{
-    color: #3E497A;
+    color: #beb3e0;
 }
 .celdaGrid:hover > a >#mentoriaIcon{
-    color: #3E497A;
+    color: #beb3e0;
 }
 .celdaGrid:hover .menuDesplegable{
     display:block;
     position: fixed;
     top:40px;
-    background-color: #F0F0F0;
+    background-color: #FFFFFF;
     width: 250px;
     list-style: none;
     cursor: pointer;
@@ -60,12 +60,12 @@ ul.menuDesplegable{
     padding-bottom: 15px;
 }
 .menuDesplegable > li > a:hover{
-    color:#21325E;
+    color:#18122B;
     font-weight: bold;
 }
 .menuDesplegable > li > a{
     text-decoration: none;
-    color: #3E497A;
+    color: #393053;
 }
 ul.perfilDesplegable{
     display:none;
@@ -77,7 +77,7 @@ ul.perfilDesplegable{
     display:block;
     position: fixed;
     top:40px;
-    background-color: #F0F0F0;
+    background-color: #FFFFFF;
     width: 250px;
     list-style: none;
     cursor: pointer;
@@ -86,10 +86,10 @@ ul.perfilDesplegable{
 }
 .perfilDesplegable > li > a{
     text-decoration: none;
-    color: #3E497A;
+    color: #18122B;
 }
 .perfilDesplegable > li > a:hover{
-    color:#21325E;
+    color:#393053;
     font-weight: bold;
 }
 .perfilDesplegable > li{
@@ -109,7 +109,7 @@ ul.perfilDesplegable{
     vertical-align: center;
 }
 #logo:hover{
-    color: #F0F0F0;
+    color: #FFFFFF;
 }
 
 
@@ -121,7 +121,7 @@ a{
 section.seccion1{
     /* border: 4px solid rgb(3, 255, 54); */
     margin-top: 60px;
-    /* background-color: #3E497A; */
+    background-color: #443C68;
     border-radius: 5px;
     margin-right: 10px;
     margin-left: 10px;
@@ -144,7 +144,7 @@ section.seccion1 > section.seccionInterna > article.celdaGrid{
 
 section.seccion1 > section.seccionInterna > article.celdaGrid > p{
     padding-left: 20px;
-    color:#F1D00A;
+    color:#FFFFFF;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -191,16 +191,16 @@ section#espacioPrueba{
 .button{
     font-size: 36px;
     border-radius:10px;
-    background-color: #F0F0F0;
+    background-color: #FFFFFF;
     padding-right: 40px;
     padding-left: 40px;
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #21325E;
+    color: #18122B;
 }
 .button:hover{
-    background-color: #21325E;
-    color: #F1D00A;
+    background-color: #18122B;
+    color: #FFFFFF;
 }
 
 section.seccion1 > div.buscador{
@@ -213,7 +213,7 @@ input.src{
     padding:9px 10px 9px 32px;
     margin-top: 10px;
     outline:none;
-    background-color: #F0F0F0;
+    background-color: #FFFFFF;
     border: none;
     border-radius: 25px;
     font-size: 18px;
@@ -230,7 +230,7 @@ div.buscador > i{
 }
 .hl1::before {
     /* Highlight color */
-    background-color: #F0F0F0;
+    background-color: #18122B;
     content: "";
     position: absolute;
     width: calc(100% + 4px);
@@ -241,11 +241,11 @@ div.buscador > i{
 }
 h2 > .hl1{
     padding-top: 30px;
-    color: #21325E;
+    color: #18122B;
 }
 
 h2 > .hl1::before{
-    background-color: #F1D00A;
+    background-color: #beb3e0;
 }
 .hl2 {
     display: inline-block;
@@ -254,7 +254,7 @@ h2 > .hl1::before{
     
 }
 .hl2::before {
-    background-color: #21325E;
+    background-color: #18122B;
     content: "";
     position: absolute;
     width: calc(100% + 4px);
@@ -281,9 +281,9 @@ a#boton2{
     margin-top: -10%;
     margin-left: 1.75%;
     width: 70%;
-    color: #21325E;
+    color: #FFFFFF;
     border-radius: 4px;
-    background-color: #F1D00A;
+    background-color: #443C68;
     padding-left: 20px;
     height: 750px;
 }
@@ -308,6 +308,7 @@ p#a2p1{
     font-weight: 800;
     left: 7.5%;
     font-size: 36px;
+    color: #F1D00A;
 }
 
 p#a2p2{
@@ -338,9 +339,9 @@ p#a2p3{
     margin: auto;
     margin-top: -8%;
     width: 50%;
-    color: #F1D00A; 
+    color: #beb3e0; 
     border-radius: 4px;
-    background-color:#3E497A;
+    background-color:#393053;
     padding-left: 20px;
     height: 550px;
 }
@@ -369,9 +370,9 @@ p#a3p5, p#a3p6, p#a3p7{
     margin-top: -15%;
     margin-left: 0%;
     width: 40%;
-    color: #21325E; 
+    color: #18122B; 
     border-radius: 4px 4px 0px 0px;
-    background-color:#F0F0F0;
+    background-color:#beb3e0;
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
@@ -437,7 +438,7 @@ p#a4p5{
 /*PARTE SEBASTIAN*/
 /*LENGUAJES POPULARES*/
 .sebastian{
-    background-color: #F0F0F0;
+    background-color: #FFFFFF;
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
@@ -509,10 +510,10 @@ p#a4p5{
 }
 /* FIN PARTE SEBASTIAN */
 section.footer{
-    border: 1px solid #3E497A;
-    background-color: #3E497A;
+    border: 1px solid #635985;
+    background-color: #635985;
     margin: 0px;
-    color: #F0F0F0;
+    color: #FFFFFF;
 }
 .footer > .celdaGrid > p{
     margin-top: 30px;
