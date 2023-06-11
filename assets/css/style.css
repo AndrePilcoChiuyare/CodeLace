@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: "Lexend";
     /* border: 1px dashed red; */
 }
 body{
@@ -412,6 +412,7 @@ p#a4p5{
     font-weight: bold;
     /* padding-top: 20px; */
     font-size: 36px;
+    padding-bottom: 20px;
 }
 .promo{
     position: relative;
@@ -545,7 +546,14 @@ section.footer{
     margin-left: 30px;
     margin-bottom: 30px;
 }
-
+@media screen and (max-width: 500px) {
+    .articulo2{
+        /* outline: 3px green solid; */
+    }
+    p#a2p3{
+        margin-bottom: 70px;
+    }
+}
 @media screen and (max-width: 768px) {
     #logo{
         padding-left: 30px;
@@ -560,7 +568,8 @@ section.footer{
         height: 300px;
         border-radius: 5px;
         margin-top: 20px;
-        position: static
+        position: static;
+        margin-bottom: 40px;
     }
 
     .sebastian{
@@ -580,6 +589,11 @@ section.footer{
         padding: 0;
         display: flex;
         flex-direction: column;
+    }
+    a#boton2{
+        margin-left: 5%;
+        padding-left: 60px;
+        padding-right: 60px;
     }
     .articulo2 img{
         margin: 0 auto;
@@ -607,8 +621,9 @@ section.footer{
     p#a2p3{
         width:50%;
         font-weight: bold;
-        padding-top: 20px;
+        padding-top: 0px;
         padding-left: 140px;
+        padding-bottom:25px;
     }
 
     .articulo3{
@@ -661,8 +676,18 @@ section.footer{
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px){
-    .seccion1{
-        /* border: 3px solid green; */
+    section.seccion1 > section.seccionInterna{
+        display:flex;
+        flex-direction: column;
+    }
+
+    section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg > img{
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        margin-top: 20px;
+        position: static;
+        margin-bottom: 40px;
     }
     .articulo3{
         /* border: 3px solid green; */
