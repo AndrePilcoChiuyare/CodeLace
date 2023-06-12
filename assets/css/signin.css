@@ -68,6 +68,7 @@ svg{
     }
     .container{
         width: 90%;
+        margin-bottom: 25px;
     }
 }
 
