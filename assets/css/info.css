@@ -24,6 +24,30 @@ body{
     max-height: none;
     overflow: visible;
 }
+.leng{
+    margin-left: 3%;
+}
+.rango{
+    width: 94%;
+    margin-left: 3%;
+}
+.rango2{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.setting{
+    width: 400%
+}
+.title-set{
+    margin-left: 3%;
+}
+
+@media screen and (max-width: 767px){
+    .setting{
+        width: 100%
+    }
+}
 
 /* Info */
 
