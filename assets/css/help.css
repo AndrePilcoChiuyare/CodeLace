@@ -25,7 +25,7 @@ body{
     overflow: visible;
 }
 
-/* Acerca de nosotros */
+/* Ayuda */
 
 .help{
     padding: 40px 40px 60px 40px;
@@ -56,7 +56,8 @@ body{
 }
 textarea{
     height: 200px;
-    margin-bottom: 8.8%;
+    margin-bottom: 25px;
+    margin-top: 1%;
 }
 section.footer{
     border: 1px solid #2a223e;
@@ -82,6 +83,9 @@ section.footer{
 .footer > .celdaGrid > #p1 > span{
     color:#84f4ff
 
+}
+#enviar{
+    margin-bottom: 2.9%;
 }
 @media screen and (max-width: 993px){
     .title{

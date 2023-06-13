@@ -1,6 +1,9 @@
 *{
     font-family: "Lexend";
 }
+body{
+    background-color: #18122B;
+}
 .principal{
     padding: 0px;
 }
