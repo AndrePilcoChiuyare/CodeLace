@@ -21,6 +21,7 @@ body{
     width: 40rem;
     /* height: 82%; */
     border-radius: 10px;
+    margin-bottom: 4.6%;
 }
 .h1{
     padding-top: 100px;
@@ -61,6 +62,35 @@ a{
 svg{
     height: 50px;
 }
+
+/* Footer */
+
+section.footer{
+    border: 1px solid #2a223e;
+    background-color: #2a223e;
+    margin: 0px;
+    color: #FFFFFF;
+    padding-bottom: 1.5%;
+    text-align: center;
+}
+.footer > .celdaGrid > i{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 2.5%;
+}
+
+.footer > .celdaGrid > #p1{
+    font-size: 30px;
+    padding-top: 2%;
+}
+.footer > .celdaGrid > #p2{
+    font-size: 20px;
+}
+.footer > .celdaGrid > #p1 > span{
+    color:#84f4ff
+
+}
+
 
 @media screen and (max-width: 575px){
     .navbar img{

@@ -27,7 +27,7 @@ body{
 
 /* Acerca de nosotros */
 
-.help{
+.about{
     padding: 40px 40px 60px 40px;
     color: #FFFFFF;
     font-size: 18px;
@@ -37,7 +37,7 @@ body{
     color: #E876BB;
     margin-top: 25px;
 }
-.help-title{
+.us-title{
     font-size: 25px;
     font-weight: bold;
     margin: 10px 0;
@@ -45,6 +45,7 @@ body{
 .title{
     font-size: 80px;
     font-weight: bold;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 .seccion{
@@ -53,35 +54,6 @@ body{
 .subrayado{
     background-color: #84F4FF;
     color: #18122B;
-}
-textarea{
-    height: 200px;
-    margin-bottom: 8.8%;
-}
-section.footer{
-    border: 1px solid #2a223e;
-    background-color: #2a223e;
-    margin: 0px;
-    color: #FFFFFF;
-    padding-bottom: 1.5%;
-    text-align: center;
-}
-.footer > .celdaGrid > i{
-    margin-left: 30px;
-    margin-bottom: 30px;
-    padding-bottom: 2.5%;
-}
-
-.footer > .celdaGrid > #p1{
-    font-size: 30px;
-    padding-top: 2%;
-}
-.footer > .celdaGrid > #p2{
-    font-size: 20px;
-}
-.footer > .celdaGrid > #p1 > span{
-    color:#84f4ff
-
 }
 @media screen and (max-width: 993px){
     .title{
