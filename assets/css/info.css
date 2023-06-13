@@ -25,12 +25,13 @@ body{
     overflow: visible;
 }
 
-/* Acerca de nosotros */
+/* Info */
 
 .about{
     padding: 40px 40px 60px 40px;
     color: #FFFFFF;
     font-size: 18px;
+    margin-bottom: 10.4%;
 }
 .icono{
     width: 80px;
@@ -54,6 +55,31 @@ body{
 .subrayado{
     background-color: #84F4FF;
     color: #18122B;
+}
+section.footer{
+    border: 1px solid #2a223e;
+    background-color: #2a223e;
+    margin: 0px;
+    color: #FFFFFF;
+    padding-bottom: 1.5%;
+    text-align: center;
+}
+.footer > .celdaGrid > i{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 2.5%;
+}
+
+.footer > .celdaGrid > #p1{
+    font-size: 30px;
+    padding-top: 2%;
+}
+.footer > .celdaGrid > #p2{
+    font-size: 20px;
+}
+.footer > .celdaGrid > #p1 > span{
+    color:#84f4ff
+
 }
 @media screen and (max-width: 993px){
     .title{
