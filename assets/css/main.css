@@ -1,0 +1,50 @@
+*{
+    font-family: "Lexend";
+}
+body{
+    background-color: #18122B;
+}
+.principal{
+    padding: 0px;
+}
+.navbar{
+    opacity: 0.9;
+    background-color: #18122B;
+}
+.prueba{
+    outline: 3px solid green;
+}
+.navbar img{
+    height: 25px;
+}
+.navbar form{
+    padding-top: 10px;
+}
+.navbar-dropdown {
+    max-height: none;
+    overflow: visible;
+}
+.leng{
+    margin-left: 3%;
+}
+.rango{
+    width: 94%;
+    margin-left: 3%;
+}
+.rango2{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.setting{
+    width: 400%
+}
+.title-set{
+    margin-left: 3%;
+}
+
+@media screen and (max-width: 767px){
+    .setting{
+        width: 100%
+    }
+}
