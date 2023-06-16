@@ -45,8 +45,7 @@ section.seccion1{
     margin-left: 10px;
     margin-bottom: 5%;
 }
-section.seccion1 > div{
-}
+
 section.seccion1 > div.buscador{
     text-align: center;
 }
@@ -132,6 +131,7 @@ p#p3{
 }
 .fondoSec{
     background-color: #2a223e;
+
 }
 .fondoSec .celdaGrid #p1{
     padding: 0px;
