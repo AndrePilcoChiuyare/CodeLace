@@ -1,0 +1,131 @@
+*{
+    font-family: "Lexend";
+}
+body{
+    background-color: #18122B;
+}
+.principal{
+    padding: 0px;
+}
+.navbar{
+    opacity: 0.9;
+    background-color: #18122B;
+}
+.prueba{
+    outline: 3px solid green;
+}
+.navbar img{
+    height: 25px;
+}
+.navbar form{
+    padding-top: 10px;
+}
+.navbar-dropdown {
+    max-height: none;
+    overflow: visible;
+}
+.leng{
+    margin-left: 3%;
+}
+.rango{
+    width: 94%;
+    margin-left: 3%;
+}
+.rango2{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.setting{
+    width: 400%
+}
+.title-set{
+    margin-left: 3%;
+}
+
+@media screen and (max-width: 767px){
+    .setting{
+        width: 100%
+    }
+}
+
+/* Ayuda */
+
+.help{
+    padding: 40px 40px 60px 40px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.icono{
+    width: 80px;
+    color: #E876BB;
+}
+
+.icono2{
+    width: 80px;
+    height: 60px;
+
+    color: #E876BB;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.help-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.title{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.seccion{
+    margin-top: 5%;
+}
+.subrayado{
+    background-color: #84F4FF;
+    color: #18122B;
+}
+textarea{
+    height: 200px;
+    margin-bottom: 25px;
+    margin-top: 1%;
+}
+section.footer{
+    border: 1px solid #2a223e;
+    background-color: #2a223e;
+    margin: 0px;
+    color: #FFFFFF;
+    padding-bottom: 1.5%;
+    text-align: center;
+}
+.footer > .celdaGrid > i{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 2.5%;
+}
+
+.footer > .celdaGrid > #p1{
+    font-size: 30px;
+    padding-top: 2%;
+}
+.footer > .celdaGrid > #p2{
+    font-size: 20px;
+}
+.footer > .celdaGrid > #p1 > span{
+    color:#84f4ff
+
+}
+#enviar{
+    margin-bottom: 2.9%;
+}
+@media screen and (max-width: 993px){
+    .title{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 769px){
+    .title{
+        font-size: 40px;
+    }
+}
