@@ -1,9 +1,45 @@
 *{
+<<<<<<< HEAD
     font-family: sans-serif;
+=======
+    font-family: "Lexend";
+>>>>>>> cc78ed49990fa44ac5e4cd3d2253d17dda749188
 }
+
 body{
-    background-color: #393646;
+    background-color: #18122B;
 }
+#Logo{
+    text-align: start;
+}
+#CodeLace{
+    font-size: 60px;
+    font-weight: bold;
+    padding-left: 4%;
+    color: #84f4ff;
+} 
+#Ingresar img{
+    position: fixed;
+    top: 24px;
+    right: 3%;
+    height: 40px;
+}
+
+section.grid-container-menu{
+    background-color: #18122B;
+    opacity: 0.9;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    position:fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    z-index: 10;
+}
+article.celdaGrid {
+    text-align: center;
+}
+<<<<<<< HEAD
 section.grid-container-menu{
     display:grid;
     grid-template-columns: 7.5% 77.5% 7.5% 7.5%;
@@ -98,4 +134,216 @@ ul.perfilDesplegable{
 ul.perfilDesplegable > li > a{
     text-decoration: none;
     color: #F4EEE0;
+=======
+a{
+    text-decoration: none;
+}
+section.seccion1{
+    margin-top: 60px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5%;
+}
+section.seccion1 > div{
+}
+section.seccion1 > div.buscador{
+    text-align: center;
+}
+section.seccion1 > section.seccionInterna{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+section.seccion1 > section.seccionInterna > article.celdaGrid{
+    text-align: left;
+}
+
+section.seccion1 > section.seccionInterna > article.celdaGrid > p{
+    padding-left: 20px;
+    color:#FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg{
+    display: flex;
+    justify-content: center;
+}
+section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg > img{
+    width: 900px;
+    transition: transform 1s;
+    position: absolute;
+    z-index: -1;
+    right: 0; 
+    top: 0px;
+    transition: transform 0.5s;
+}
+section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg > img:hover{
+    transform: scale(0.97);
+}
+#imgPlus{
+    width: 25%;
+    transition: filter 1s;
+    margin-bottom: 3%;
+}
+#imgPlus:hover{
+    filter: blur(4px);
+}
+p#p1{
+    font-weight: bolder;
+    font-size: 100px;
+}
+.pink{
+    color: #E876BB;
+}
+p#p2{
+    font-weight: lighter;
+    font-size: 40px;
+}
+.subrayado{
+    background-color: #84f4ff;
+    color: #18122B;
+}
+p#p3{
+    font-weight: lighter;
+    font-size: 30px;
+}
+.celdaGrid > div.buttonDiv{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.button{
+    font-size: 36px;
+    border-radius:10px;
+    background-color: #FFFFFF;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #18122B;
+    transition: transform 0.5s;
+}
+.button:hover{
+    background-color: #E876BB;
+    color: #FFFFFF;
+    transform: scale(0.97);
+}
+.fondoSec{
+    background-color: #2a223e;
+}
+.fondoSec .celdaGrid #p1{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 5%;
+    color: #84f4ff;
+}
+.fondoSec .celdaGrid #p2{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #c6afff;
+    font-size: 60px;
+}
+#articuloImgPlus{
+    margin: 0px;
+    padding: 0px;
+}
+.fondoTer .celdaGrid #p1{
+    margin-bottom: 0px;
+    color:#FFFFFF;
+}
+#cost{
+    width: 50%;
+}
+.segundo{
+    color: #e2f8ff;
+    margin: 0px;
+    padding-bottom: 7%;
+}
+section.footer{
+    border: 1px solid #2a223e;
+    background-color: #2a223e;
+    margin: 0px;
+    color: #FFFFFF;
+    padding-bottom: 1.5%;
+}
+.footer > .celdaGrid > p{
+    margin-top: 5%px;
+    margin-bottom: 5%px;
+}
+.footer > .celdaGrid > i{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 2.5%;
+}
+
+.footer > .celdaGrid > #p1{
+    font-size: 30px;
+}
+.footer > .celdaGrid > #p2{
+    font-size: 20px;
+}
+.footer > .celdaGrid > #p1 > span{
+    color:#84f4ff
+
+}
+
+@media screen and (max-width: 1380px){
+    section.seccion1 > section.seccionInterna > article.celdaGrid#articuloImg > img{
+        filter: brightness(30%);
+    }
+    p#p1{
+        font-weight: bolder;
+    }
+    section.seccion1 > section.seccionInterna{
+        grid-template-columns: 100% 0%;
+    }
+    #cost{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    p#p1{
+        font-size: 60px;
+    }
+    section.seccion1 > section.seccionInterna{
+        grid-template-columns: 100% 0%;
+    }
+    #cost{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 450px){
+    #CodeLace{
+        font-size: 40px;
+    } 
+    #Ingresar img{
+        top: 9px;
+    }
+    p#p1{
+        font-size: 40px;
+    }
+    p#p2{
+        font-size: 30px;
+    }
+    p#p3{
+        font-size: 20px;
+    }
+    #imgPlus{
+        width: 60%;
+    }
+    #cost{
+        width: 90%;
+    }
+    section.seccion1 > section.seccionInterna{
+        grid-template-columns: 100% 0%;
+    }
+    .fondoSec .celdaGrid #p2{
+        font-size: 30px;
+    }
+>>>>>>> cc78ed49990fa44ac5e4cd3d2253d17dda749188
 }
