@@ -6,47 +6,62 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>CodeLace</title>
 		<link rel="stylesheet" href="assets/css/style.css">
-		<title>CodeLace</title>
+		<script src="https://kit.fontawesome.com/a80e29a7c1.js" crossorigin="anonymous"></script>
+		<link rel="shortcut icon" href="assets/img/CodeLace.png" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
 	</head>
 	<body>
-		<header>
-			<a href="#" class="menu">
-				<img src="assets/img/menu.png" alt="Menú">
-				<img src="assets/img/menu_hover.png" alt="Menú">
-			</a>
-			<nav>
-				<a href="#" class="mentoria">
-					<img src="assets/img/reservation.png" alt="Mentorías reservadas">
-					<img src="assets/img/reservation_hover.png" alt="Mentorías reservadas">
-				</a>
-				<a href="#" class="perfil">
-					<img src="assets/img/profile.png" alt="Perfil">
-					<img src="assets/img/profile_hover.png" alt="Perfil">
-				</a>
-			</nav>
-			<a href="" class="logo">
-				<h1 class="CodeLace">CodeLace</h1>
-				<img src="assets/img/codelace_logo.png" alt="Logo CodeLace">
-			</a>
-		</header>
-		<article class="articulo1">
-			<form action="">
-            	<input type="search" id="searchID" name="search" placeholder="Buscar mentorías">
-			</form>
-			<img src="assets/img/imagen1.png" alt="Imagen Principal">
-			<h1>Simplifica tu camino <br> como programador</h1>
-			<h2>Benefíciate de la mejor red de <br> mentores</h2>
-			<h3>Absuelve tus dudas de programación y entiende tu carrera a <br> fondo</h3>
-			<a class="button" href="#">Unirse</a>
-		</article>
-		<section class="articulo2">
-			<img src="assets/img/img2.jpg">
-			<article class="vcenter" id="a2">
-                <p id="a2p1">CodeLace Plus</p>
-                <p id="a2p2">Mentorias <span class="hl1">gratis</span> todas las semanas!</p>
-                <p id="a2p3">Tarifa mensual <span class="hl1">reducida</span></p>
-				<a class="button" href="#" id="boton2">Suscribirse</a>
+		<section class="grid-container-menu">
+			<article class="celdaGrid" id="Logo">
+                <a href="main.html" id="CodeLace">CodeLace</a>
             </article>
+            <article class="celdaGrid" id="Ingresar">
+                <a href="login.html"><img src="assets/img/login.png" alt="Login"></a>
+            </article>
+		</section>
+		<section class="seccion1">
+			<section class="seccionInterna">
+				<article class="celdaGrid" id="principal">
+					<p id="p1">Simplifica tu camino como <span class="pink">programador</span></p>
+					<p id="p2">Benefíciate de <span class="subrayado">la mejor red de mentores</span></p>
+					<p id="p3">Absuelve tus dudas de programación y entiende tu carrera a fondo</p>
+					<div class="buttonDiv">
+						<a class="button" href="/main.html" id="Reserva">Reservar</a>
+					</div>
+				</article>
+				<article class="celdaGrid" id="articuloImg">
+					<img src="assets/img/3dpc.png" alt="Imagen Principal">
+				</article>
+			</section>
+		</section>
+        <section class="fondoSec">
+            <article class="celdaGrid">
+                <p id="p1">CodeLace Plus</p>
+                <p id="p2" >¡Mentorías gratis todas las semanas!</p>
+            </article>
+            <article class="celdaGrid" id="articuloImgPlus">
+                <a href="#plus"><img src="assets/img/plus3d.webp" alt="CodeLacePlus" id="imgPlus"></a>
+            </article>
+        </section>
+        <section class="fondoTer">
+            <article class="celdaGrid">
+                <p id="p1">Los <span class="pink">estudiantes</span> son los verdaderos <span class="pink">protagonistas</span></p>
+                <img src="assets/img/3dmoney.png" alt="Bajo Costo" id="cost">
+                <p id="p1" class="segundo">Mentorías a <span class="subrayado">precios reducidos</span></p>
+            </article>
+        </section>
+		<section class="footer">
+			<article class="celdaGrid">
+                <p id="p1">Únete a la experiencia <span>CodeLace</span></p>
+				<p id="p2">Encuentra al mejor mentor</p>
+                <p id="p2">Simplifica tu camino como programador</p>
+			</article>
+			<!-- <article class="celdaGrid">
+				<i class="fa-brands fa-facebook-f fa-2xl"></i>
+				<i class="fa-brands fa-instagram fa-2xl"></i>
+				<i class="fa-brands fa-twitter fa-2xl"></i>
+				<i class="fa-brands fa-youtube fa-2xl"></i>
+			</article> -->
 		</section>
 	</body>
 </html>
