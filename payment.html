@@ -18,25 +18,44 @@
                 </div>
               </nav>
               <div class="container">
-                <div class="row text-center">
-                    <div class="column-12"><p class="h1">Añadir método de pago</p></div>
-                    <div class="column-12" id="info"><div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="text">
-                        <label for="floatingInput">Nombre del titular de la tarjeta</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="tarjeta" placeholder="text">
+                <div class="row text-center" >
+                  <div class="column-12">
+                    <p class="h1">Añadir método de pago</p>
+                  </div>
+                  <div class="column-12" id="info">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="Nombre del titular de la tarjeta">
+                      <label for="floatingInput">Nombre del titular de la tarjeta</label>
+                    </div>
+                    <div class="column-12 mb-3">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="tarjeta" placeholder="Número de tarjeta">
                         <label for="tarjeta">Número de tarjeta</label>
+                        <img src="assets/img/visalogo.png" class="visa-logo" alt="Visa logo">
                       </div>
-                    </div>
-                    <div class="column-4">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingdate" placeholder="text">
-                            <label for="floatingInput">dd/mm/aaaa</label>
-                        </div>
-                    </div>
-                </div>
+                    </div>                
+                  </div>
+                  <div class="col-md-8 mb-4 custom-col">
+                      <div class="form-floating">
+                          <input type="date" class="form-control" id="fechaExpiracion" placeholder="dd/mm/aaaa">
+                          <label for="fechaExpiracion">Fecha de expiración</label>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-4 custom-col">
+                      <div class="form-floating">
+                          <input type="text" class="form-control" id="cvc" placeholder="CVC">
+                          <label for="cvc" class="form-label">CVC</label>
+                      </div>
+                  </div>
+                  <div class="text-center mb-3">
+                    <a href="main.html" class="btn btn-primary">Añadir</a>
+                  </div>
+                  <div class="text-center mb-4">
+                    <a href="main.html" class="btn btn-primary">Volver</a>
+                  </div>
               </div>
+              
+            </div>
               <section class="footer">
                 <article class="celdaGrid">
                           <p id="p1">Únete a la experiencia <span>CodeLace</span></p>

@@ -21,11 +21,11 @@ body{
     width: 40rem;
     /* height: 82%; */
     border-radius: 10px;
-    margin-bottom: 21.3%;
+    margin-bottom: 18%;   
 }
 .h1{
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     font-weight:600;
 }
 .form-check{
@@ -121,4 +121,31 @@ section.footer{
         margin-right: 5px;
     }
 
+}
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    padding-right: 40px; 
+}
+
+.visa-logo {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: auto;
+}
+.custom-col {
+    padding-right: auto;
+    padding-left: auto;
+  }
+
+@media (min-width: 768px) {
+    .custom-col {
+        padding-right: 36px;
+        padding-left: 24px;
+    }
 }
