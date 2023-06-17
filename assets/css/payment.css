@@ -142,6 +142,16 @@ section.footer{
     padding-right: auto;
     padding-left: auto;
   }
+  .btn-primary:hover {
+    background-color: #84F4FF; /* Cambia el color a tu preferencia */
+    color:#000000; /* Cambia el color del texto a tu preferencia */
+    border-color:#18122B;
+  }
+  .btn-primary {
+    background-color: #2a223e; /* Cambia el color de fondo al sombrear (hover) */
+    color:#FFFFFF; /* Cambia el color del texto al sombrear (hover) */
+    border-color: #18122B; /* Cambia el color del borde al sombrear (hover) */
+  }
 
 @media (min-width: 768px) {
     .custom-col {
