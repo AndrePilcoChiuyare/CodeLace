@@ -43,7 +43,13 @@ body{
 .title-set{
     margin-left: 3%;
 }
-
+input{
+    display:none;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
 .mentores{
     display: flex;
     flex-direction: column;

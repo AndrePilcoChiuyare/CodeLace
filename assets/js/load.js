@@ -27,7 +27,7 @@ function loadMentor() {
             htmlScript += "<div class=\"mentores__item\">";
             htmlScript += "<div class=\"mentores__item__picture\"><img src=\"./assets/img/" + jsonList[i].img + ".png\" alt=\"\"></div>";
             htmlScript += "<div class=\"mentores__item__description\"><p><span><i class=\"bx bx-medal bx-flip-horizontal\" style=\"color:#777\"></i></span><span>" + jsonList[i].nombre + " " + jsonList[i].apellido + "</span><span>S/. "+ jsonList[i].costo +"</span></p>";
-            htmlScript += "<p><span><i class=\"bx bx-medal bx-flip-horizontal\" style=\"color:#777\"></i></span><span>" + jsonList[i].lenguaje[0] + ", "+ jsonList[i].lenguaje[1] + "</span><span><a href=\"appointment.html\"><button type=\"button\" class=\"btn btn-outline-light\">Reservar</button></a></span></p>";
+            htmlScript += "<p><span><i class=\"bx bx-medal bx-flip-horizontal\" style=\"color:#777\"></i></span><span>" + jsonList[i].lenguaje[0] + ", "+ jsonList[i].lenguaje[1] + "</span><span><form action=\"appointment.html\" method=\"get\"><input type=\"text\" id=\"nombre\" name=\"nombre\" value=\""+ jsonList[i].nombre +"\"><input type=\"text\" id=\"apellido\" name=\"apellido\" value=\""+ jsonList[i].apellido +"\"><input type=\"text\" id=\"costo\" name=\"costo\" value=\""+ jsonList[i].costo +"\"><input type=\"text\" id=\"img\" name=\"img\" value=\""+ jsonList[i].img +"\"><button type=\"submit\" class=\"btn btn-outline-light\">Reservar</button></form></span></p>";
             htmlScript += "</div>";
             htmlScript += "</div>";
         }
@@ -37,5 +37,32 @@ function loadMentor() {
     xhttp.send();
 }
 
+function getURLParameter(p) {
+    var url = new URL(window.location.href);
+    var value = url.searchParams.get(p);
+    return value;
+}
+
+function loadReserva() {
+    const xhttp = new XMLHttpRequest();
+    var nombre=getURLParameter('nombre');
+    var apellido=getURLParameter('apellido');
+    var costo=getURLParameter('costo');
+    var img=getURLParameter('img');
+    xhttp.onload = function () {
+        var jsonList = JSON.parse(this.responseText);
+        var htmlScript = "";
+        htmlScript += "<div class=\"col-12 col-lg-4 my-2\">";
+        htmlScript += "<img class=\"mentor rounded-5\" src=\"./assets/img/"+ img +".png\" alt=\"foto mentor\">";
+        htmlScript += "</div>";
+        htmlScript += "<div class=\"col-6 col-lg-4 my-2\"><p class=\"us-title\">" + nombre + " " + apellido +"</p></div>";
+        htmlScript += "<div class=\"col-6 col-lg-4 my-2\"><p class=\"us-title\">S/. " + costo +"/h</p></div>";
+        document.getElementById("reserva").innerHTML = htmlScript;
+    }
+    xhttp.open("GET", "assets/js/mentor.json", true);
+    xhttp.send();
+}
+
 loadPay();
 loadMentor();
+loadReserva();
