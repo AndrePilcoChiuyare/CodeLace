@@ -1,11 +1,16 @@
 *{
     font-family: "Lexend";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 body{
     background-color: #18122B;
 }
 .principal{
     padding: 0px;
+    width: 100%;
 }
 .navbar{
     opacity: 0.9;
@@ -43,8 +48,47 @@ body{
     margin-left: 3%;
 }
 
+.c-item{
+    height: 480px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.card-container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 380px;
+}
+
+.card{
+    border: 0;
+    padding: 30px;
+}
+
+.card img {
+    max-width: 25%;
+    margin: auto;
+    padding: 0.5em;
+    border-radius: 0.7em;
+}
+
 @media screen and (max-width: 767px){
     .setting{
         width: 100%
+    }
+    .card-container{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 380px;
     }
 }
