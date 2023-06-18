@@ -54,9 +54,20 @@ body{
 }
 
 .c-img{
+    animation: transitionIn 3s;
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6);
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .card-container{
@@ -78,6 +89,46 @@ body{
     margin: auto;
     padding: 0.5em;
     border-radius: 0.7em;
+}
+
+.text-section{
+    text-align: center;
+}
+.card-link{
+    text-decoration: none;
+    color: black;
+}
+
+/* FOOTER */
+
+.subrayado{
+    background-color: #84F4FF;
+    color: #18122B;
+}
+section.footer{
+    border: 1px solid #2a223e;
+    background-color: #2a223e;
+    margin: 0px;
+    color: #FFFFFF;
+    padding-bottom: 1.5%;
+    text-align: center;
+}
+.footer > .celdaGrid > i{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 2.5%;
+}
+
+.footer > .celdaGrid > #p1{
+    font-size: 30px;
+    padding-top: 2%;
+}
+.footer > .celdaGrid > #p2{
+    font-size: 20px;
+}
+.footer > .celdaGrid > #p1 > span{
+    color:#84f4ff
+
 }
 
 @media screen and (max-width: 767px){
