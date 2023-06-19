@@ -6,7 +6,7 @@
 		    <title>CodeLace</title>
         <link rel="shortcut icon" href="assets/img/CodeLace.png" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/about.css">
+        <link rel="stylesheet" href="assets/css/history.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
     </head>
     <body>
@@ -128,38 +128,64 @@
                   </div>
                 </div>
               </nav>
-              <!-- Acerca de nosotros -->
-              <section class="about seccion">
+              <!-- Ayuda -->
+              <section class="help seccion">
                 <div class="container text-center">
                     <div class="row">
                         <div class="col-12">
-                            <p class="title"><span class="subrayado">Acerca de nosotros</span></p>
+                            <p class="title"><span class="subrayado">Historial de Mentorías</span></p>
                         </div>
-                        <!-- Quienes somos -->
-                        <div class="columna col-12 col-md-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart icono" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                              </svg>
-                            <p class="us-title">¿Quiénes somos?</p>
-                            <p>Somos una plataforma de mentorías dispuesta a contribuir con el desarrollo de programadores a través de enseñanza de calidad gracias al aporte de profesionales calificados con la misma ambición que tú.</p>
+                    </div>
+                    <div class="row align-items-center obj">
+                        <div class="col-7 text-end">
+                            <p class="sin-padding">22/04/2023, Juan Rivas</p>
                         </div>
-                        <!-- Mision -->
-                        <div class="columna col-12 col-md-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-lightbulb icono" viewBox="0 0 16 16">
-                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
-                              </svg>
-                            <p class="us-title">Nuestra misión</p>
-                            <p>Proporcionar herramientas que permitan mejorar el rendimiento de los estudiantes de programación, con el fin de tener un impacto positivo en el desarrollo tecnológico a nivel nacional y global.</p>
+                        <div class="col-5 text-start">
+                            <button type="button" class="btn btn-outline-light" onclick="location.href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiZ28yQscb_AhWCg4QIHW3lAAsQwqsBegQIDhAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU';">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                                </svg>
+                            </button>
                         </div>
-                        <!-- Vision -->
-                        <div class="columna col-12 col-md-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-rocket-takeoff icono" viewBox="0 0 16 16">
-                                <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362.798-.799.96-1.932.362-2.531-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532Z"/>
-                                <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9.42 9.42 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a9.556 9.556 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093.067.017.12.033.16.045.184.06.279.13.351.295l.029.073a3.475 3.475 0 0 1 .157.721c.055.485.051 1.178-.159 2.065Zm-4.828 7.475.04-.04-.107 1.081a1.536 1.536 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a8.548 8.548 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006ZM5.205 5c-.625.626-.94 1.351-1.004 2.09a8.497 8.497 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107-.04.039Zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a2.835 2.835 0 0 0-.045-.283 3.078 3.078 0 0 0-.3-.041Z"/>
-                                <path d="M7.009 12.139a7.632 7.632 0 0 1-1.804-1.352A7.568 7.568 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/>
-                              </svg>
-                            <p class="us-title">Nuestra visión</p>
-                            <p>Ser reconocida internacionalmente como una casa educativa digital de calidad, que brinda una formación complementaria de excelencia en el campo de la programación, siendo líderes en la entrega de una experiencia de aprendizaje personalizada.</p>
+                    </div>
+                    <div class="row align-items-center obj">
+                        <div class="col-7 text-end">
+                            <p class="sin-padding">22/04/2023, Juan Rivas</p>
+                        </div>
+                        <div class="col-5 text-start">
+                            <button type="button" class="btn btn-outline-light" onclick="location.href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiZ28yQscb_AhWCg4QIHW3lAAsQwqsBegQIDhAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU';">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row align-items-center obj">
+                        <div class="col-7 text-end">
+                            <p class="sin-padding">22/04/2023, Juan Rivas</p>
+                        </div>
+                        <div class="col-5 text-start">
+                            <button type="button" class="btn btn-outline-light" onclick="location.href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiZ28yQscb_AhWCg4QIHW3lAAsQwqsBegQIDhAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU';">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row align-items-center obj">
+                        <div class="col-7 text-end">
+                            <p class="sin-padding">22/04/2023, Juan Rivas</p>
+                        </div>
+                        <div class="col-5 text-start">
+                            <button type="button" class="btn btn-outline-light" onclick="location.href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiZ28yQscb_AhWCg4QIHW3lAAsQwqsBegQIDhAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU';">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
