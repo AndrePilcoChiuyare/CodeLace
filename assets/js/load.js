@@ -63,6 +63,16 @@ function loadReserva() {
     xhttp.send();
 }
 
+function resumeReserva() {
+    var params = new URLSearchParams(window.location.search);
+
+    // Get the value of the 'name' parameter
+    var name = params.get('nombre');
+    console.log(name); // Output: John
+    return name
+}
+
 loadPay();
 loadMentor();
 loadReserva();
+resumeReserva();
