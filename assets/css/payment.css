@@ -1,0 +1,162 @@
+*{
+    font-family: "Lexend";
+}
+.principal{
+    padding: 0px;
+}
+.navbar{
+    background-color: #18122B;
+}
+.prueba{
+    outline: 3px solid green;
+}
+.navbar img{
+    height: 70px;
+}
+body{
+    background-color: #18122B;
+}
+.container{
+    background-color: #FFFFFF;
+    width: 40rem;
+    /* height: 70%; */
+    border-radius: 10px;
+    margin-bottom: 8.4%;
+    margin-top: 2%;   
+}
+.h1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-weight:600;
+}
+.form-check{
+    padding-top: 25px;
+    width: 80%;
+    padding-left: 10%;
+}
+.form-floating{
+    width: 90%;
+    margin-left: 5%;
+}
+.bIcon{
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.cIcon{
+    padding-top: 25px;
+}
+
+.registro{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: #18122B;
+    font-weight: bold;
+}
+
+svg{
+    height: 50px;
+}
+
+/* Footer */
+
+section.footer{
+    border: 1px solid #2a223e;
+    background-color: #2a223e;
+    margin: 0px;
+    color: #FFFFFF;
+    padding-bottom: 1.5%;
+    text-align: center;
+}
+.footer > .celdaGrid > i{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 2.5%;
+}
+
+.footer > .celdaGrid > #p1{
+    font-size: 30px;
+    padding-top: 2%;
+}
+.footer > .celdaGrid > #p2{
+    font-size: 20px;
+}
+.footer > .celdaGrid > #p1 > span{
+    color:#84f4ff
+
+}
+
+
+@media screen and (max-width: 575px){
+    .navbar img{
+        height: 25px;
+    }
+    .container{
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 437px){
+    .bIcon{
+        height: 80px;
+        width: 80px;
+        margin-right: 20px;
+    }
+
+    svg{
+        height: 35px;
+    }
+}
+@media screen and (max-width: 404px){
+    .bIcon{
+        height: 60px;
+        width: 60px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    padding-right: 40px; 
+}
+
+.visa-logo {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: auto;
+}
+.custom-col {
+    padding-right: auto;
+    padding-left: auto;
+  }
+  .btn-primary:hover {
+    background-color: #84F4FF; /* Cambia el color a tu preferencia */
+    color:#000000; /* Cambia el color del texto a tu preferencia */
+    border-color:#18122B;
+  }
+  .btn-primary {
+    background-color: #2a223e; /* Cambia el color de fondo al sombrear (hover) */
+    color:#FFFFFF; /* Cambia el color del texto al sombrear (hover) */
+    border-color: #18122B; /* Cambia el color del borde al sombrear (hover) */
+  }
+
+@media (min-width: 768px) {
+    .custom-col {
+        padding-right: 36px;
+        padding-left: 24px;
+    }
+}
