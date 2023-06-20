@@ -27,7 +27,7 @@ function loadMentor() {
             htmlScript += "<div class=\"mentores__item\">";
             htmlScript += "<div class=\"mentores__item__picture\"><img src=\"./assets/img/" + jsonList[i].img + ".png\" alt=\"\"></div>";
             htmlScript += "<div class=\"mentores__item__description\"><p><span><i class=\"bx bx-medal bx-flip-horizontal\" style=\"color:#777\"></i></span><span>" + jsonList[i].nombre + " " + jsonList[i].apellido + "</span><span>S/. "+ jsonList[i].costo +"</span></p>";
-            htmlScript += "<p><span><i class=\"bx bx-medal bx-flip-horizontal\" style=\"color:#777\"></i></span><span>" + jsonList[i].lenguaje[0] + ", "+ jsonList[i].lenguaje[1] + "</span><span><form action=\"appointment.html\" method=\"get\"><input type=\"text\" id=\"nombre\" name=\"nombre\" value=\""+ jsonList[i].nombre +"\"><input type=\"text\" id=\"apellido\" name=\"apellido\" value=\""+ jsonList[i].apellido +"\"><input type=\"text\" id=\"costo\" name=\"costo\" value=\""+ jsonList[i].costo +"\"><input type=\"text\" id=\"img\" name=\"img\" value=\""+ jsonList[i].img +"\"><input type=\"text\" id=\"id\" name=\"id\" value=\""+ i +"\"><button type=\"submit\" class=\"btn btn-outline-light\">Reservar</button></form></span></p>";
+            htmlScript += "<p><span><i class=\"bx bx-medal bx-flip-horizontal\" style=\"color:#777\"></i></span><span>" + jsonList[i].lenguaje[0] + ", "+ jsonList[i].lenguaje[1] + "</span><span><form action=\"appointment.html\" method=\"get\"><input type=\"text\" id=\"id\" name=\"id\" value=\""+ i +"\"><button type=\"submit\" class=\"btn btn-outline-light\">Reservar</button></form></span></p>";
             htmlScript += "</div>";
             htmlScript += "</div>";
         }
