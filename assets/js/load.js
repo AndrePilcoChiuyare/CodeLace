@@ -27,7 +27,7 @@ function loadMentor() {
             htmlScript += "<div class=\"mentores__item\">";
             htmlScript += "<div class=\"mentores__item__picture\"><img src=\"./assets/img/" + jsonList[i].img + ".png\" alt=\"\"></div>";
             htmlScript += "<div class=\"mentores__item__description\"><p><span><i class=\"bx bx-medal bx-flip-horizontal\" style=\"color:#777\"></i></span><span>" + jsonList[i].nombre + " " + jsonList[i].apellido + "</span><span>S/. "+ jsonList[i].costo +"</span></p>";
-            htmlScript += "<p><span><i class=\"bx bx-medal bx-flip-horizontal\" style=\"color:#777\"></i></span><span>" + jsonList[i].lenguaje[0] + ", "+ jsonList[i].lenguaje[1] + "</span><span><form action=\"appointment.html\" method=\"get\"><input type=\"text\" id=\"nombre\" name=\"nombre\" value=\""+ jsonList[i].nombre +"\"><input type=\"text\" id=\"apellido\" name=\"apellido\" value=\""+ jsonList[i].apellido +"\"><input type=\"text\" id=\"costo\" name=\"costo\" value=\""+ jsonList[i].costo +"\"><input type=\"text\" id=\"img\" name=\"img\" value=\""+ jsonList[i].img +"\"><button type=\"submit\" class=\"btn btn-outline-light\">Reservar</button></form></span></p>";
+            htmlScript += "<p><span><i class=\"bx bx-medal bx-flip-horizontal\" style=\"color:#777\"></i></span><span>" + jsonList[i].lenguaje[0] + ", "+ jsonList[i].lenguaje[1] + "</span><span><form action=\"appointment.html\" method=\"get\"><input type=\"text\" id=\"nombre\" name=\"nombre\" value=\""+ jsonList[i].nombre +"\"><input type=\"text\" id=\"apellido\" name=\"apellido\" value=\""+ jsonList[i].apellido +"\"><input type=\"text\" id=\"costo\" name=\"costo\" value=\""+ jsonList[i].costo +"\"><input type=\"text\" id=\"img\" name=\"img\" value=\""+ jsonList[i].img +"\"><input type=\"text\" id=\"id\" name=\"id\" value=\""+ i +"\"><button type=\"submit\" class=\"btn btn-outline-light\">Reservar</button></form></span></p>";
             htmlScript += "</div>";
             htmlScript += "</div>";
         }
@@ -36,6 +36,8 @@ function loadMentor() {
     xhttp.open("GET", "assets/js/mentor.json", true);
     xhttp.send();
 }
+
+
 
 function getURLParameter(p) {
     var url = new URL(window.location.href);
@@ -63,6 +65,51 @@ function loadReserva() {
     xhttp.send();
 }
 
+function loadReserva2() {
+    const xhttp = new XMLHttpRequest();
+    var i=getURLParameter('id');
+    xhttp.onload = function () {
+        var jsonList = JSON.parse(this.responseText);
+        var htmlScript = "";
+        htmlScript += "<div class=\"col-12 col-lg-4 my-2\">";
+        htmlScript += "<img class=\"mentor rounded-5\" src=\"./assets/img/"+ jsonList[i].img +".png\" alt=\"foto mentor\">";
+        htmlScript += "</div>";
+        htmlScript += "<div class=\"col-6 col-lg-4 my-2\"><p class=\"us-title\">" + jsonList[i].nombre + " " + jsonList[i].apellido +"</p></div>";
+        htmlScript += "<div class=\"col-6 col-lg-4 my-2\"><p class=\"us-title\">S/. " + jsonList[i].costo +"/h</p></div>";
+        document.getElementById("res").innerHTML = htmlScript;
+    }
+    xhttp.open("GET", "assets/js/mentor.json", true);
+    xhttp.send();
+}
+
+function loadDesc(){
+    const xhttp = new XMLHttpRequest();
+    var texto=getURLParameter('texto');
+    xhttp.onload = function () {
+        var jsonList = JSON.parse(this.responseText);
+        var htmlScript = "";
+        htmlScript += "Descripción: " + texto;
+        document.getElementById("desc").innerHTML = htmlScript;
+    }
+    xhttp.open("GET", "assets/js/mentor.json", true);
+    xhttp.send();
+}
+
+function loadSum(){
+    const xhttp = new XMLHttpRequest();
+    var id=getURLParameter('id');
+    xhttp.onload = function () {
+        var jsonList = JSON.parse(this.responseText);
+        var htmlScript = "";
+        htmlScript += "<input type=\"text\" id=\"id\" name=\"id\" value=\""+ id +"\"><button type=\"submit\" class=\"btn btn-outline-light\">Reservar</button>";
+        document.getElementById("btn").innerHTML = htmlScript;
+    }
+    xhttp.open("GET", "assets/js/mentor.json", true);
+    xhttp.send();
+}
+loadReserva2();
+loadSum();
 loadPay();
 loadMentor();
 loadReserva();
+loadDesc();

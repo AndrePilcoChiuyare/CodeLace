@@ -84,6 +84,12 @@ body{
 .seccion{
     margin-bottom: 2%;
 }
+form div button{
+    margin-top: 25px;
+}
+input{
+    display: none;
+}
 
 .btn-p {
     --bs-btn-color: #fff;
