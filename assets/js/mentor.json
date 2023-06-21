@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Juan",
+        "apellido": "Álvarez",
+        "costo": "25",
+        "lenguaje":[
+            "Python",
+            "C++"
+        ],
+        "img": "mentor1"
+    },
+    {
+        "nombre": "José",
+        "apellido": "Gutiérrez",
+        "costo": "30",
+        "lenguaje":[
+            "Java",
+            "Python"
+        ],
+        "img": "mentor2"
+    },
+    {
+        "nombre": "Luis",
+        "apellido": "Pérez",
+        "costo": "20",
+        "lenguaje":[
+            "C++",
+            "Java"
+        ],
+        "img": "mentor3"
+    }
+]
