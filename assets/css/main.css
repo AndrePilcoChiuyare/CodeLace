@@ -1,0 +1,166 @@
+*{
+    font-family: "Lexend";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.p-card{
+    color: #18122B;
+    font-size: 20px;
+}
+body{
+    background-color: #18122B;
+}
+.principal{
+    padding: 0px;
+    width: 100%;
+}
+.navbar{
+    opacity: 0.9;
+    background-color: #18122B;
+}
+.prueba{
+    outline: 3px solid green;
+}
+.navbar img{
+    height: 25px;
+}
+.navbar form{
+    padding-top: 10px;
+}
+.navbar-dropdown {
+    max-height: none;
+    overflow: visible;
+}
+.leng{
+    margin-left: 3%;
+}
+.rango{
+    width: 94%;
+    margin-left: 3%;
+}
+.rango2{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.setting{
+    width: 400%
+}
+.title-set{
+    margin-left: 3%;
+}
+
+.c-item{
+
+    height: 550px;
+}
+
+.c-img{
+    animation: transitionIn 3s;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.us-title{
+    font-weight: bold;
+    font-size: 26px;
+}
+.row{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.columna{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+a{
+    text-decoration: none;
+    color: #E876BB;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.card{
+    border: 0;
+    padding: 30px;
+}
+.columna{
+    color: #000000;
+}
+.about{
+    background-color: #FFFFFF;
+}
+
+.card img {
+    max-width: 25%;
+    margin: auto;
+    padding: 0.5em;
+    border-radius: 0.7em;
+}
+
+.text-section{
+    text-align: center;
+}
+.card-link{
+    text-decoration: none;
+    color: black;
+}
+
+/* FOOTER */
+
+.subrayado{
+    background-color: #84F4FF;
+    color: #18122B;
+}
+section.footer{
+    border: 1px solid #2a223e;
+    background-color: #2a223e;
+    margin: 0px;
+    color: #FFFFFF;
+    padding-bottom: 1.5%;
+    text-align: center;
+}
+.footer > .celdaGrid > i{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 2.5%;
+}
+
+.footer > .celdaGrid > #p1{
+    font-size: 30px;
+    padding-top: 2%;
+}
+.footer > .celdaGrid > #p2{
+    font-size: 20px;
+}
+.footer > .celdaGrid > #p1 > span{
+    color:#84f4ff
+
+}
+.card-div{
+    background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px){
+    .setting{
+        width: 100%
+    }
+    /* .card-container{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* height: 380px;
+    }*/
+}
