@@ -37,6 +37,43 @@ function loadMentor() {
     xhttp.send();
 }
 
+function loadHistory() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+        var jsonList = JSON.parse(this.responseText);
+        var htmlScript = "";
+        for(var i=0; i< jsonList.length; i++){
+            htmlScript += "<div class=\"row align-items-center obj\" ><div class=\"col-7 text-end\">";
+            htmlScript += "<p class=\"sin-padding\">" + jsonList[i].fecha +", " + jsonList[i].Nombre + "</p>";
+            htmlScript += "</div>";
+            htmlScript += "<div class=\"col-5 text-start\">";
+            htmlScript += "<button type=\"button\" class=\"btn btn-outline-light\" onclick=\"location.href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiZ28yQscb_AhWCg4QIHW3lAAsQwqsBegQIDhAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU';\">";
+            htmlScript += "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"60\" height=\"30\" fill=\"currentColor\" class=\"bi bi-play-circle\" viewBox=\"0 0 16 16\"><path d=\"M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z\"/><path d=\"M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z\"/></svg></button></div></div>"
+        }
+        document.getElementById("history").innerHTML = htmlScript;
+    }
+    xhttp.open("GET", "assets/js/history.json", true);
+    xhttp.send();
+}
+function loadReservation() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+        var jsonList = JSON.parse(this.responseText);
+        var htmlScript = "";
+        for(var i=0; i< jsonList.length; i++){
+            htmlScript += "<div class=\"row align-items-center obj\" ><div class=\"col-7 text-end\">";
+            htmlScript += "<p class=\"sin-padding\">" + jsonList[i].fecha +", " + jsonList[i].Nombre + "</p>";
+            htmlScript += "</div>";
+            htmlScript += "<div class=\"col-5 text-start\">";
+            htmlScript += "<button type=\"button\" class=\"btn btn-outline-light\" onclick=\"location.href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiZ28yQscb_AhWCg4QIHW3lAAsQwqsBegQIDhAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU';\">";
+            htmlScript += "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"60\" height=\"30\" fill=\"currentColor\" class=\"bi bi-link\" viewBox=\"0 0 16 16\"><path d=\"M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z\"/><path d=\"M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z\"/></svg></button></div></div>"
+        }
+        document.getElementById("reservation").innerHTML = htmlScript;
+    }
+    xhttp.open("GET", "assets/js/reservation.json", true);
+    xhttp.send();
+}
+
 
 
 function getURLParameter(p) {
@@ -113,3 +150,5 @@ loadPay();
 loadMentor();
 loadReserva();
 loadDesc();
+loadHistory();
+loadReservation();
